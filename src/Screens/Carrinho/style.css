@@ -1,0 +1,161 @@
+.DivEnd
+{
+    background-color: white;
+    width: 936px;
+    height: 378.41px;
+    border-radius: 14px;
+    padding: 20px;
+    margin-left: 192px;
+}
+
+.divend
+{
+    font-family: roboto;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+.titulo01
+{
+    color:black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.icone
+{
+    float: left;
+    color: #DF9F00;
+}
+
+.conteudo
+{
+    margin-top: -47px;
+    margin-left: 8px;
+}
+
+.button01
+{
+    background-color: transparent;
+    border: 0;
+ margin-left: 10px;
+    margin-left: 320px;
+}
+
+.button02
+{
+    background-color: transparent;
+    border: 0;
+    margin-left: -9px;
+}
+
+.button03
+{
+    background-color: transparent;
+    border: 0;
+    margin-top: -30px;
+    margin-left: 305px;
+}
+.DivProd
+{
+    width: 936px;
+    height: 575px;
+    border-radius: 14px;
+    background-color: white;
+    margin-top: 43.50px; 
+    padding: 20px;
+    margin-left: 192px;
+
+}
+
+.icone1
+{
+    float: left;
+    color: #DF9F00;
+    width: 28px;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.imgProd
+{
+    width: 150px;
+    height: 200px;
+    margin-top: -40px;
+    margin-left: 10px;
+    float: left;
+}
+
+.Legenda01
+{
+    font-family: roboto;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-top:-37px;
+
+}
+
+.Quant
+{
+    font-family: roboto;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top:-50px;
+    margin-left: 480px;
+}
+
+.preco
+{
+    font-family: roboto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: -85px;
+    margin-right: 15px;
+}
+
+.icone2
+{
+    float: left;
+    color: #ff0909;
+    padding: 0;
+}
+
+.DivProd1
+{
+ margin-top: 250px;
+}
+
+.DivFinal
+{
+    width: 936px;
+    height: 126px;
+    background-color: white;
+    margin-top: 43.50px; 
+    margin-left: 192px;
+    border-radius: 14px;
+}
+
+.total
+{
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: 700;
+    float: left;
+    padding: 15px;
+}
+
+.button04
+{
+    border: 2px solid #DF9F00;
+    width: 115px;
+    height: 30px;
+    background-color: #DF9F00;
+    color: black;
+    font-weight: 200;
+    font-family: roboto;
+}

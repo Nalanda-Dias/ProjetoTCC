@@ -1,0 +1,200 @@
+.container {
+    margin-top: 103.86px;
+    margin-left: -399px;
+}
+
+.login-form {
+    margin-left: 550px;
+    width: 402px;
+    height: 461.27px;
+    margin-top: 103.86;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    gap: 16px;
+}
+
+.login-form-title {
+    display: block;
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+}
+
+.wrap-input {
+    width: 390px;
+    position: relative;
+    margin-top: 05px;
+}
+
+.legenda {
+    color: black;
+    margin-bottom: 8px;
+    font-family: ubuntu;
+}
+
+.form-control {
+    font-size: 15px;
+    color: black;
+    width: 390px;
+    height: 38px;
+    border-radius: 4.8px;
+    border-color: #002973;
+    box-shadow: 1px 3px  #7B7B7B;
+    background-color: #DCDCDC;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #002973;
+}
+
+.btnEntrar {
+    background-color: #FFB703;
+    height: 48px;
+    padding: 9px, 17px, 9px, 17px;
+    width: 395px;
+    border: #FFB703;
+    margin-top: 20px;
+}
+
+hr {
+    width: 374px;
+    border: 1px solid #7B7B7B;
+    margin-left: 10px;
+}
+
+.legenda1 {
+    margin-top: 27px;
+    text-align: center;
+}
+
+.botoes {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+
+.btnEntrar1 {
+    background-color: #DCDCDC;
+    color: #002973;
+    border: 2px solid #002973;
+    justify-content: center;
+    width: 192px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: ubuntu;
+    border-radius: 3.2px;
+    display: flex;
+    padding: 5px, 9px, 5px, 9px;
+    align-items: center;
+    gap: 2.2px;
+
+
+}
+
+.btnEntrar2 {
+    background-color: #DCDCDC;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    justify-content: center;
+    width: 192px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: ubuntu;
+    border-radius: 3.2px;
+    padding: 5px, 9px, 5px, 9px;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    margin-left: 205.5px;
+    margin-top: -48px;
+}
+
+.linhavertical {
+    border: 3px solid #7B7B7B;
+    transform: rotate(89.97deg);
+    width: 415.13px;
+    height: 0px;
+    margin-left: 469.88px;
+    margin-top: -224px;
+    display: flex;
+}
+
+.container2
+{
+    margin-top: -259px;
+    margin-left: 200px;
+}
+
+.form-control::-webkit-input-placeholder 
+{ 
+    font-size: 20px;
+    float: left;
+    font-family: ubuntu;
+  }
+
+  .wrap-input1
+  {
+    margin-top: 6px;
+  }
+
+  .alinhamento
+  {
+    margin-top: 12px;
+  }
+
+  .btnEntrar3 {
+    background-color: #DCDCDC;
+    color: #DF9F00;
+    border: 2px solid #DF9F00;
+    justify-content: center;
+    width: 390px;
+    height: 48px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: ubuntu;
+    border-radius: 3.2px;
+    padding: 5px, 9px, 5px, 9px;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    margin-left: 1px;
+    margin-top: 40px;
+    border-radius: 4.8px;
+}
+
+.btnEntrar1:hover
+{
+    color: white;
+    background-color:  #002973;
+}
+
+.btnEntrar2:hover
+{
+    color: white;
+    background-color:  #FF0000;
+}
+
+.btnEntrar3:hover
+{
+    color: white;
+    background-color:  #DF9F00;
+}
+
+.btnEntrar:hover
+{
+    color: #DF9F00;
+    border: 2px solid #DF9F00;
+    background-color:  #dedede;
+}

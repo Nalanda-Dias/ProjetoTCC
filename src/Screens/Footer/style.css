@@ -1,0 +1,43 @@
+footer
+{
+    background-color: #002973;
+    width: auto;
+    height: 349px;
+    margin-top: 400px;
+}
+
+.logofooter
+{
+    margin-left: 191px;   
+    margin-top: 90px;
+}
+
+.Atendimento
+{
+    margin-left: 431px;
+    color: #fff;
+    margin-top: -70px;
+}
+
+.RedesSociais
+{
+    margin-left: 431px;
+    color: #fff;
+}
+
+.icon
+{   
+    width: 40px;
+    height: 29.58px;
+    float: left;
+    display: flex;  
+    align-items: center;
+}
+
+
+.Contato
+{
+    color: #fff;
+    margin-top: -140px;
+    margin-left: 845px;
+}

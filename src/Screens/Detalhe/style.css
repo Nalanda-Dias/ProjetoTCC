@@ -1,0 +1,101 @@
+.detalhes {
+    width: 1088px;
+    height: 516px;
+    background-color: white;
+    margin-top: 48px;
+    margin-left: 120px;
+    border-radius: 14px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.tituloDetalhes {
+    width: 455px;
+    height: 24px;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: ubuntu;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 24px;
+}
+
+.logogta {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.imagemPric {
+    width: 250px;
+    height: 300px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.imagensSec {
+    margin-left: 60px;
+}
+
+.imgSec {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.div1 {
+    float: left;
+}
+
+.titulo1 {
+    float: left;
+}
+
+.div2 {
+    margin-top: 100px;
+}
+
+.ValorComprar {
+    
+}
+
+.valor {
+    font-size: 40px;
+    color: #FFB703;
+    
+}
+
+.btnComprar5 {
+    float: left;
+    margin-left: 315px;
+    background-color: #FFB703;
+    height: 48px;
+    padding: 9px, 17px, 9px, 17px;
+    width: 255px;
+    border: #FFB703;
+    margin-top: -52px;
+
+}
+
+.btnComprar5:hover
+{
+    color: #DF9F00;
+    border: 2px solid #DF9F00;
+    background-color:  white;
+}
+
+.descricao
+{
+    height: 192px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: ubuntu;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.estoque
+{
+    color: #002973;
+    font-weight:bold ;
+}

@@ -1,0 +1,141 @@
+.NavInitial {
+    height: 93px;
+    width: auto;
+    background-color: #002973;
+}
+
+.logo {
+    margin-left: 248px;
+    margin-top: 10px;
+}
+
+
+form {
+    width: 296px;
+    height: 48px;
+    margin-top: -48px;
+    margin-left: 492px;
+    border-radius: 4px;
+
+}
+
+.search-box {
+    position: relative;
+    height: 34px;
+}
+
+input {
+    border: 0;
+    font-size: 15px;
+    font-family: Balsamiq Sans;
+    text-align: center;
+}
+
+.search-box .input-group-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
+}
+
+
+.search-box .input-group-btn button {
+    background-color: transparent;
+    padding: 0px 9px;
+    font-size: 22px;
+    border: 0;
+}
+
+.avatar {
+    margin-left: 903px;
+    margin-top: -86px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    margin-left: 971px;
+    margin-top: -77px;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    font-family: Ubuntu;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #FFB703;
+}
+
+a:active {
+    color: #fff;
+}
+
+
+.navbar {
+    background-color: #FFB703;
+    height: 40px;
+    width: auto;
+    padding: 0px;
+}
+
+.links {
+    text-decoration: none;
+    width: 187.2px;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    font-family: Ubuntu;
+    align-items: center;
+    gap: 8px;
+}
+
+.links:visited
+{
+    color: #002973;
+}
+
+.links:hover {
+    color: #fff;
+}
+
+.links:link {
+    color: rgb(240, 0, 0);
+}
+
+.DivFunc
+{
+    
+    width: 936px;
+    height: 40px;
+    margin-left: 272px;
+}
+
+.busque
+{
+    width: 296px;
+}
+
+.link2
+{
+    font-size: 24px;
+    margin-left: 1098px;
+    margin-top: -50px;
+    float: left;
+}
+.link3
+{
+    font-size: 24px;
+    margin-left: 1140px;
+    margin-top: -48px;
+    float: left;
+}
