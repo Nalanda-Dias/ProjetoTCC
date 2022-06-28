@@ -8,8 +8,8 @@ import Home from '../Screens/Home/index';
 import LoginCad from '../Screens/LoginCad/index';
 import Pcs from '../Screens/Pcs';
 import Perifericos from '../Screens/Perifericos';
-
-
+import Pagamento from '../Screens/Pagamento/index';
+import Confirmacao from '../Screens/Confirmacao/index';
 export const AppRoutes = () => {
     return (
         <Router>
@@ -22,6 +22,8 @@ export const AppRoutes = () => {
                     <Route path="/pcs" exact element={<Pcs/>}/>
                     <Route path="/carrinho" exact element={<Carrinho/>}/>
                     <Route path="/detalhes" exact element={<Detalhe/>}/>
+                    <Route path="/pagamento" exact element={<Pagamento/>}/>
+                    <Route path="/confcompra" exact element={<Confirmacao/>}/>
             </Routes>
         </Router>
     )
