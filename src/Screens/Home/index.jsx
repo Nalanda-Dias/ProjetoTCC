@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap"
+import "bootstrap/dist/js/bootstrap";
 import "./style.css";
 import img1 from "../../assents/consoles.png";
 import img2 from "../../assents/dogs.png";
@@ -23,9 +23,22 @@ import { Carousel } from "react-responsive-carousel";
 import { Card, CarouselItem, Container } from "react-bootstrap";
 import { BsCart } from "react-icons/bs";
 import { Produto, ProdutoBotao, ProdutoImagem, ProdutoTexto } from "./styles";
+import { useState } from "react";
+import { useEffect } from "react";
+import { Api } from "../../services/api";
 
+function Home() {
+  const [top5, setTop5] = useState([]);
 
-const Home = () => {
+  useEffect(() => {
+    async function buscaTop5() {
+      const dados = await Api.get("produto/top4");
+      console.log(dados.data.data);
+      setTop5(dados.data.data)
+    }
+    buscaTop5();
+  }, []);
+
   return (
     <>
       <div className="containerPrincipal">
@@ -34,7 +47,7 @@ const Home = () => {
             id="carouselExampleCaptions"
             className="carousel slide"
             data-bs-ride="carousel"
-            style={{height:"400px"}}
+            style={{ height: "400px" }}
           >
             <div className="carousel-indicators">
               <button
@@ -63,18 +76,14 @@ const Home = () => {
                 <img src={img1} className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Consoles e PCs</h5>
-                  <p>
-                    Os consoles mais famosos e PCs mais turbinados 
-                  </p>
+                  <p>Os consoles mais famosos e PCs mais turbinados</p>
                 </div>
               </div>
               <div className="carousel-item">
                 <img src={img2} className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>Franquia WatchDogs com desconto</h5>
-                  <p>
-                    Aproveite a franquia watchdogs com desconto na loja.
-                  </p>
+                  <p>Aproveite a franquia watchdogs com desconto na loja.</p>
                 </div>
               </div>
               <div className="carousel-item">
@@ -115,30 +124,18 @@ const Home = () => {
         </div>
         <h1 className="container--titulo">Mais vendidos</h1>
         <div className="MaisVendidos">
-            <Produto>
-              <ProdutoImagem src={img4}/>
-              <ProdutoTexto>Dark Souls</ProdutoTexto>
-              <ProdutoTexto>R$ 200</ProdutoTexto>
-              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
-            </Produto>
-            <Produto>
-              <ProdutoImagem src={img4}/>
-              <ProdutoTexto>Dark Souls</ProdutoTexto>
-              <ProdutoTexto>R$ 200</ProdutoTexto>
-              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
-            </Produto>
-            <Produto>
-              <ProdutoImagem src={img4}/>
-              <ProdutoTexto>Dark Souls</ProdutoTexto>
-              <ProdutoTexto>R$ 200</ProdutoTexto>
-              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
-            </Produto>
-            <Produto>
-              <ProdutoImagem src={img4}/>
-              <ProdutoTexto>Dark Souls</ProdutoTexto>
-              <ProdutoTexto>R$ 200</ProdutoTexto>
-              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
-            </Produto>
+          {top5.map((x) => {
+            return(
+            <Produto key={x.produtoID}>
+              <ProdutoImagem src={x.urlCapa} />
+              <ProdutoTexto>{x.nome}</ProdutoTexto>
+              <ProdutoTexto>R$ {x.preco}</ProdutoTexto>
+              <ProdutoBotao>
+                <BsCart />
+                COMPRAR
+              </ProdutoBotao>
+            </Produto>);
+          })}
         </div>
         <div className="container--banner">
           <img src={img8} className="banner" />
@@ -159,6 +156,6 @@ const Home = () => {
       </div>
     </>
   );
-};
+}
 
 export default Home;

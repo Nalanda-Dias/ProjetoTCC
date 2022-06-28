@@ -6,7 +6,7 @@ export const Produto = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   padding: 10px;
-
+  margin: 0 12px;
   width: 224px;
   height: 315.43px;
 
