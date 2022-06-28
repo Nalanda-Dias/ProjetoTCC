@@ -179,3 +179,22 @@ hr {
   border: 2px solid #df9f00;
   background-color: #f7f7f7;
 }
+
+@media (max-width: 570px) {
+    .container
+    {
+        margin-left: -520px;
+        float:none;
+    }
+
+    .linhavertical {
+        display: none;
+    }
+
+    .container2
+    {
+        margin-top: 100px;
+        margin-left: -500px;
+    }
+}
+

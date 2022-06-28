@@ -50,3 +50,18 @@ footer p, h4{
     gap: 30px;
     flex-wrap: wrap;
 }
+
+@media (max-width: 570px) 
+{
+    .logofooter
+    {
+        margin-left: -130px;
+    }
+    
+    .redes
+    {
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+   
+}

@@ -19,7 +19,7 @@ export default function Footer() {
                             Segunda a Sábado
                         </p>
                     </div>
-                    <div >
+                    <div className="redes">
                         <div>
                             <h4>Redes Sociais</h4>
                         </div>
