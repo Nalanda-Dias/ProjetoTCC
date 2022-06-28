@@ -73,15 +73,11 @@ const Perifericos = () => {
          </Card>
      </div>
 
-     <br /><br /><br /><br />
-     <br /><br /><br /><br />
-     <br /><br /><br /><br />
-     <br /><br /><br /><br />
-     <br /><br /><br /><br />
+     
      <div>
 
          <Card>
-             <div className=''>
+             <div className='card2'>
                  <img className='card-img-top' src={img5}></img>
                  <div className='card-body'>
                      <h5 className='card-text'>Headset Branco</h5>
@@ -94,7 +90,7 @@ const Perifericos = () => {
 
          </Card>
          <Card>
-             <div className=''>
+             <div className='card2'>
                  <img className='card-img-top' src={img6}></img>
                  <div className='card-body'>
                      <h5 className='card-text'>Headset Fem Rosa</h5>
@@ -107,7 +103,7 @@ const Perifericos = () => {
 
          </Card>
          <Card>
-             <div className=''>
+             <div className='card2'>
                  <img className='card-img-top' src={img7}></img>
                  <div className='card-body'>
                      <h5 className='card-text'>Teclado </h5>
@@ -121,7 +117,7 @@ const Perifericos = () => {
          </Card>
 
          <Card>
-             <div className=''>
+             <div className='card2'>
                  <img className='card-img-top' src={img8}></img>
                  <div className='card-body'>
                      <h5 className='card-text'>Teclado Gamer</h5>

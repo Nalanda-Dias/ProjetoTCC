@@ -49,7 +49,7 @@ export const Header = () => {
             </div>
           </form>
           <div className="user">
-            <img src={Avatar} alt="Avatar" className="avatar" />
+          <a href="/login" ><img src={Avatar} alt="Avatar" className="avatar" /></a>
             <a href="/login" className="link">
               Faça login <br /> ou cadastre-se{" "}
             </a>

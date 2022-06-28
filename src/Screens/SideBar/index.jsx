@@ -5,6 +5,7 @@ import React from "react";
 import { Container, Content } from "./styles";
 import { FaTimes, FaUserAlt } from "react-icons/fa";
 import SidebarItem from "../SidebarItem";
+import "./styles.css";
 
 const Sidebar = ({ active }) => {
   const closeSidebar = () => {
@@ -12,7 +13,7 @@ const Sidebar = ({ active }) => {
   };
 
   return (
-    <Container sidebar={active}>
+    <Container className="sidebar" sidebar={active}>
       <FaTimes onClick={closeSidebar} />
       <Content>
         <SidebarItem Icon={FaUserAlt} Text="Minha conta" />

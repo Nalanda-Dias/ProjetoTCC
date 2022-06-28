@@ -99,6 +99,7 @@
   margin-left: 192px;
   color: black;
 }
+
 .imgsCat {
   float: left;
   margin: 13px;
@@ -123,14 +124,14 @@
   align-items: center;
 }
 
-.MaisVendidos div:nth-child(1){
-    margin-left: 0px;
-    margin-right: 0px;
+.MaisVendidos div:nth-child(1) {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.MaisVendidos div:nth-child(4){
-    margin-left: 0px;
-    margin-right: 0px;
+.MaisVendidos div:nth-child(4) {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .container--bannerFull {
@@ -150,7 +151,7 @@
   margin-top: 30px;
 }
 
-.container--categorias > img {
+.container--categorias>img {
   cursor: pointer;
 }
 
@@ -160,4 +161,61 @@
 
 .container--titulo {
   margin-top: 50px;
+}
+
+.carousel-control-prev {
+  height: 100%;
+}
+
+@media (max-width: 570px) {
+  .containerPrincipal {
+    width: 100%;
+  }
+
+  .carousel-control-prev {
+    margin-top: -10px;
+    height: 244px;
+  }
+
+  .carousel-control-next {
+    margin-top: -10px;
+    height: 244px;
+  }
+
+  .carousel-indicators {
+    margin-top: 80px;
+  }
+
+  .container--titulo {
+    margin-top: -180px;
+  }
+
+  .banner {
+    width: 200px;
+    height: 140px;
+    cursor: pointer;
+    margin-left: 30px;
+
+  }
+
+  .bannerteste {
+    width: 439px;
+    height: 150px;
+    cursor: pointer;
+    margin-top: -150px;
+  }
+
+
+  .container--banner {
+    width: 10%;
+
+  }
+
+  .container--categorias{
+    width: 150px;
+  
+    }
+  .container--categorias>img {
+    width: 80px;
+  }
 }

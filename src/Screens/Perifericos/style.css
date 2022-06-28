@@ -1,0 +1,11 @@
+@media (max-width: 570px) 
+{
+ 
+    .card
+{
+   float: none;
+   margin-left: -50px;
+}
+
+
+}
