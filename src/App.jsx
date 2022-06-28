@@ -2,13 +2,16 @@ import React from "react";
 import Footer from "./Screens/Footer/index";
 import { AppRoutes } from "./Routes";
 import { Header } from "./Screens/Header/index";
+import { AuthProvider } from "./context/AuthProvider";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <AppRoutes />
-      <Footer />
+      <AuthProvider>
+        <Header />
+        <AppRoutes />
+        <Footer />
+      </AuthProvider>
     </>
   );
 }

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../../assents/LogoInfinite.png";
 import Vector from "../../assents/Vector.png";
 import Avatar from "../../assents/Avatar.png";
+import LogoBg from "../../assents/logoBg.png";
 
 import "./style.css";
 import {
@@ -18,11 +19,13 @@ import { Link, NavLink } from "react-router-dom";
 import Menu from "../SideBar";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import SideBar from '../SideBar'
+import SideBar from "../SideBar";
+import { useAuth } from "../../context/AuthProvider/useAuth";
 
 export const Header = () => {
   const [sideBar, setSidebar] = useState(false);
   const showSiderbar = () => setSidebar(!sideBar);
+  const user = useAuth();
 
   return (
     <>
@@ -48,15 +51,29 @@ export const Header = () => {
               />
             </div>
           </form>
-          <div className="user">
-            <img src={Avatar} alt="Avatar" className="avatar" />
-            <a href="/login" className="link">
-              Faça login <br /> ou cadastre-se{" "}
-            </a>
-            <a href="/carrinho" className="link2">
-              <BsFillCartFill />
-            </a>
-          </div>
+          {user?.token ? (
+            <div className="user">
+              <img src={LogoBg} alt="Avatar" className="avatar" />
+              <span style={{color:"white"}}>
+                Olá {user.nome.split(' ')[0]}
+                <br />
+                <a onClick={() => user.logout()} className="link">Sair</a>
+              </span>
+              <a href="/carrinho" className="link2">
+                <BsFillCartFill />
+              </a>
+            </div>
+          ) : (
+            <div className="user">
+              <img src={Avatar} alt="Avatar" className="avatar" />
+              <a href="/login" className="link">
+                Faça login <br /> ou cadastre-se{" "}
+              </a>
+              <a href="/carrinho" className="link2">
+                <BsFillCartFill />
+              </a>
+            </div>
+          )}
         </nav>
       </div>
       <nav className="navbar">
