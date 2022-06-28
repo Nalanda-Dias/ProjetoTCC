@@ -24,7 +24,7 @@ export const AppRoutes = () => {
                     <Route path="/perifericos" exact element={<Perifericos/>}/>
                     <Route path="/pcs" exact element={<Pcs/>}/>
                     <Route path="/carrinho" exact element={<Carrinho/>}/>
-                    <Route path="/detalhes" exact element={<Detalhe/>}/>
+                    <Route path="/detalhes/:id" exact element={<Detalhe/>}/>
                     <Route path="/pagamento" exact element={<Pagamento/>}/>
                     <Route path="/boleto" exact element={<Boleto/>}/>
                     <Route path="/cartao" exact element={<Cartao/>}/>
