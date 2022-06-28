@@ -1,0 +1,100 @@
+.imagendamento
+{
+    width: 936px;
+    height: 306px;
+    border-radius: 4px;
+    padding: 7px, 13px, 7px, 13px;
+    margin-left: 200px;
+}
+
+.legendaAgenda
+{
+    font-size: 32px;
+    margin-left: 270px;
+    margin-top: -230px;
+    color: white;
+    font-weight: 400;
+}
+
+.agenda
+{
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 270px;
+    color: white;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    width: 154px;
+    height: 44px;
+}
+
+.agendaAtual
+{
+    margin-top: 100px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    margin-left: 200px;
+}
+
+.imgagenda
+{
+    width: 150px;
+    height: 200px;
+    margin-left: 200px;
+}
+
+.LegAgenda
+{
+    font-family: roboto;
+    font-size: 25px;
+    color: black;
+    margin-left: 380px;
+    margin-top: -120px;
+    font-weight: bold;
+}
+
+.quando
+{
+    font-family: roboto;
+    font-size: 25px;
+    margin-left: 650px;
+    margin-top: -70px;
+}
+
+.iconeCancelar
+{
+    color: red;
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-top: 6px;
+   
+}
+
+.buttonCancelar
+{
+    
+    border: 0;
+    background-color: transparent;
+    font-family: roboto;
+    font-size: 25px;
+   
+}
+
+.cancelar
+{
+    margin-left: 800px;
+    margin-top: -55px;
+}
+
+.informacoes
+{
+    border: 0;
+    background-color: transparent;
+    font-family: Roboto;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: -10px;
+}

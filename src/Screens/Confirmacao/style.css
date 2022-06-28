@@ -1,0 +1,40 @@
+.Check {
+    width: 194px;
+    height: 194px;
+    margin-top: 114.5px;
+    margin-left: 571px;
+}
+
+.legendaCompra {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 0px;
+    text-align: center;
+    margin-top: 41px;
+}
+
+.button11 {
+
+    width: 194px;
+    height: 44px;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid #DF9F00;
+    background-color: #DF9F00;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 570px;
+    margin-top: 25px;
+}
+
+.button11:hover
+{
+    color: #DF9F00;
+    background-color: transparent;
+    border: 3px solid #DF9F00;
+}
+
+
+

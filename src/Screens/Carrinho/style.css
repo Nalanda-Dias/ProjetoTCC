@@ -152,10 +152,40 @@
 .button04
 {
     border: 2px solid #DF9F00;
-    width: 115px;
-    height: 30px;
+    width: 311.5px;
+    height: 86px;
     background-color: #DF9F00;
     color: black;
-    font-weight: 200;
+    font-weight: bold;
     font-family: roboto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.button05
+{
+    border: 3px solid #DF9F00;
+    width: 311.5px;
+    height: 86px;
+    background-color: transparent;
+    color: #DF9F00;
+    font-weight: bold;
+    font-family: roboto;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.button05:hover
+{
+    color: black;
+    background-color: #DF9F00;
+}
+
+.button04:hover
+{
+    color: #DF9F00;
+    background-color: transparent;
+    border: 3px solid #DF9F00;
 }

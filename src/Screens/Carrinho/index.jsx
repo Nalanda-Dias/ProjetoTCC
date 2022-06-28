@@ -13,7 +13,7 @@ const Carrinho = () => {
             <div className='DivEnd'>
                 <div className='divend'>
                     <p className='icone'><BsFillGeoAltFill /></p>
-                    <h2 className='titulo01'>SELECIONE O ENDEREÇO</h2> <br /><br />
+                    <h2 className='titulo01'> SELECIONE O ENDEREÇO</h2> <br /><br />
                     <div className='conteudo'>
                         <input type="radio" name="fav_language" value="HTML" />
                         <label for="html">My Home</label>
@@ -71,7 +71,7 @@ const Carrinho = () => {
 
             <div className='DivFinal'>
                 <p className='total'>Total: <br /> R$3000,00</p>
-                <button className='button04'>CONFIRMAR</button>
+                <a href='/pagamento'><button className='button04'>CONFIRMAR</button></a>
                 <button className='button05'>CONTINUAR COMPRANDO</button>
             </div>
         </>
