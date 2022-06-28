@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css";
 import { BsCart } from "react-icons/bs";
@@ -7,22 +6,53 @@ import img1 from "../../assents/gtaV.jpg";
 import img2 from "../../assents/GTA5.png";
 import img3 from "../../assents/GTA2.png";
 import img4 from "../../assents/GTA1.png";
-import img5 from "../../assents/GTA4.png";
-import img6 from "../../assents/GTA3.png";
+
+import React, { useEffect, useState } from "react";
+
+import { Api } from "../../services/api";
+import { useParams } from "react-router-dom";
+
 const Detalhe = () => {
+    
+    // const {id} = useParams();
+    
+    const [Produto, setProduto] = useState({});
+    const [fotos, setFotos] = useState([]);
+    const {id} = useParams();
+    console.log(id);
+
+    useEffect(() => {
+        async function getx() {
+          try {
+            const res = await Api.get(`produto/${id}`);
+            console.log(res.data.data);
+            setProduto(res.data.data);
+            console.log(res.data.data)
+            console.log("Fotos recebidas", res.data.data.urlFotos);
+            setFotos(res.data.data.urlFotos);
+            
+            // console.log("URL Fotos: " + Produto.urlFotos[0]);
+          } catch (error) {
+            console.log("Erro: " + error);
+          }
+        }
+        getx();
+      }, []);
+
+      console.log("Fostos do estado", fotos);
     return (
+        
 
         <>
-            <div className='detalhes'>
+
+            <div>
                 <div className='div1'>
-                    <h3 className="tituloDetalhes">Jogo GTA V Premium Online Edition PS4</h3>
-                    <img src={img0} className="logogta" />
+                    <h3 className="tituloDetalhes">{Produto.titulo}</h3>
+
                     <br />
-                    <img src={img1} className="imagemPric" />
+                    <img src={Produto.urlCapa} className="imagemPric" />
                     <div className='imagensSec'>
-                        <img src={img2} className="imgSec" />
-                        <img src={img3} className="imgSec" />
-                        <img src={img4} className="imgSec" />
+                        {fotos.map((x) => { return <img src={x} className="imgSec" />; })}
                     </div>
                 </div>
                 <div className='div2'>
