@@ -26,7 +26,7 @@ export const Header = () => {
                     <img src={Avatar} alt="Avatar" className="avatar" />
                     <a href='/login' className="link" >Faça login <br /> ou cadastre-se </a>
                     <a href='/carrinho' className='link2'><BsFillCartFill /></a>
-                    <a href='#' className='link3'><BsFillHeartFill /></a>
+                    <a href='/agendamento' className='link3'><BsFillHeartFill /></a>
                 </div>
                 <div>
            

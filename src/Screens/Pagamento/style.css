@@ -147,3 +147,127 @@
 
 
 
+.button12 {
+    border-radius: 4px;
+    width: 287px;
+    height: 44px;
+    padding: 7px1 13px, 7px, 13px;
+    margin-left: 176px;
+    margin-top: 28px;
+    border: 3px solid #DF9F00;
+    background-color: transparent;
+    text-align: left;
+    color: #DF9F00;
+}
+
+.button13 {
+    border-radius: 4px;
+    width: 287px;
+    height: 44px;
+    padding: 7px1 13px, 7px, 13px;
+    margin-left: 176px;
+    margin-top: 28px;
+    border: 3px solid #DF9F00;
+    background-color: #DF9F00;
+    color: black;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    float: left;
+}
+
+.button12:hover
+{
+    color: black;
+    background-color: #DF9F00;
+}
+
+.button14
+{
+    width: 194px;
+    height: 44px;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid #DF9F00;
+    background-color: #DF9F00;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 12px;
+   
+}
+
+
+.button15 {
+    border-radius: 4px;
+    width: 287px;
+    height: 44px;
+    padding: 7px1 13px, 7px, 13px;
+    margin-left: 176px;
+    margin-top: 28px;
+    border: 3px solid #DF9F00;
+    background-color: transparent;
+    text-align: left;
+    color: #DF9F00;
+}
+
+.button16 {
+    border-radius: 4px;
+    width: 287px;
+    height: 44px;
+    padding: 7px1 13px, 7px, 13px;
+    margin-left: 176px;
+    margin-top: 28px;
+    border: 3px solid #DF9F00;
+    background-color: transparent;
+    color: #DF9F00;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    float: left;
+}
+
+.button16:hover
+{
+    color: black;
+    background-color: #DF9F00;
+}
+.button15:hover
+{
+    color: black;
+    background-color: #DF9F00;
+}
+
+.button17 {
+    border-radius: 4px;
+    width: 287px;
+    height: 44px;
+    padding: 7px1 13px, 7px, 13px;
+    margin-left: -285px;
+    margin-top: 80px;
+    border: 3px solid #DF9F00;
+    background-color: #DF9F00;
+    color: black;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    
+}
+
+.button18
+{
+    width: 194px;
+    height: 44px;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid #DF9F00;
+    background-color: #DF9F00;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 12px;
+   
+}

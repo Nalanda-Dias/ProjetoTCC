@@ -10,9 +10,9 @@ const pagamento = () => {
         <div className='DivButtons'>
             <button className='button06'><BsFillXDiamondFill/> PIX</button>
             <br/>
-            <button className='button07'><BsUpc/>  BOLETO</button>
+            <a href='/boleto'><button className='button07'><BsUpc/>  BOLETO</button></a>
             <br/>
-            <button className='button08'><BsFillCreditCardFill/> CARTÃO DE CRÉDITO</button>
+            <a href='/cartao'><button className='button08'><BsFillCreditCardFill/> CARTÃO DE CRÉDITO</button></a>
         </div>
         <div className='Pix'>
             <h3 className='Pix'>Pix</h3>
