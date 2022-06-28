@@ -1,31 +1,26 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./style.css";
-import { AiOutlineMenu } from "react-icons/ai";
-import Avatar from "../../assents/Avatar.png"
-import { BsFillPersonFill, BsCart, BsHeartFill, BsGraphUp } from "react-icons/bs";
+import { BsCart, BsHeartFill } from "react-icons/bs";
+// export default Menu
 
-const Menu = () => {
-    return (
+import React from "react";
+import { Container, Content } from "./styles";
+import { FaTimes, FaUserAlt } from "react-icons/fa";
+import SidebarItem from "../SidebarItem";
 
-        <>
-        
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
+const Sidebar = ({ active }) => {
+  const closeSidebar = () => {
+    active(false);
+  };
 
-                <ul class="menu__box">
-                    <li class="menu__item"><img src={Avatar} alt="Avatar" className="avatar1" />Olá Kratos</li>
-                    <li className='itemmenu'><a class="menu__item" href="#"><BsFillPersonFill/>Minha conta</a></li>
-                    <li className='itemmenu'><a class="menu__item" href="#"><BsCart/>Meus pedidos</a></li>
-                    <li className='itemmenu'><a class="menu__item" href="#"><BsHeartFill/>Favoritos</a></li>
-                    <li className='itemmenu'><a class="menu__item" href="#"><BsGraphUp/>Dashoard</a></li>
-                </ul>
-            </div>
-        </>
-    )
-}
+  return (
+    <Container sidebar={active}>
+      <FaTimes onClick={closeSidebar} />
+      <Content>
+        <SidebarItem Icon={FaUserAlt} Text="Minha conta" />
+        <SidebarItem Icon={BsCart} Text="Meus pedidos" />
+        <SidebarItem Icon={BsHeartFill} Text="Favoritos" />
+      </Content>
+    </Container>
+  );
+};
 
-export default Menu
+export default Sidebar;

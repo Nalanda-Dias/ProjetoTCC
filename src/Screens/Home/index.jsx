@@ -1,5 +1,6 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap"
 import "./style.css";
 import img1 from "../../assents/consoles.png";
 import img2 from "../../assents/dogs.png";
@@ -18,126 +19,146 @@ import img14 from "../../assents/catPerifericos.png";
 import img15 from "../../assents/CatPc.png";
 import img16 from "../../assents/CatConsole.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import { Card } from 'react-bootstrap';
+import { Carousel } from "react-responsive-carousel";
+import { Card, CarouselItem, Container } from "react-bootstrap";
 import { BsCart } from "react-icons/bs";
+import { Produto, ProdutoBotao, ProdutoImagem, ProdutoTexto } from "./styles";
+
 
 const Home = () => {
   return (
-
     <>
-
-      <Carousel >
-        <div>
-          <img className='imgs' src={img1}></img>
-          <h1 className='Titulos'>Destaques</h1>
-        </div>
-        <div >
-          <img className='imgs' src={img2}></img>
-          <h1 className='Titulos'>Destaques</h1>
-        </div>
-        <div className='active'>
-          <img className='imgs' src={img3}></img>
-          <h1 className='Titulos'>Destaques</h1>
-        </div>
-      </Carousel>
-      <div>
-        <h1 className='tituloMV'>Mais vendidos</h1>
-        <Card>
-          <div className=''>
-            <img className='card-img-top' src={img4}></img>
-            <div className='card-body'>
-              <h5 className='card-text'>Dark Souls 3</h5>
-              <p className='card-text'>R$ 125,50</p>
-              <div>
-                <button className='btnComprar'><BsCart />COMPRAR</button>
+      <div className="containerPrincipal">
+        <div className="carrosel">
+          <div
+            id="carouselExampleCaptions"
+            className="carousel slide"
+            data-bs-ride="carousel"
+            style={{height:"400px"}}
+          >
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={img1} className="d-block w-100" alt="..." />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Consoles e PCs</h5>
+                  <p>
+                    Os consoles mais famosos e PCs mais turbinados 
+                  </p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img src={img2} className="d-block w-100" alt="..." />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Franquia WatchDogs com desconto</h5>
+                  <p>
+                    Aproveite a franquia watchdogs com desconto na loja.
+                  </p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img src={img3} className="d-block w-100" alt="..." />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>Elden Ring </h5>
+                  <p>
+                    O jogo mais comentado de 2022 está em estoque, aproveite!
+                  </p>
+                </div>
               </div>
             </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
-
-        </Card>
-        <Card>
-          <div className=''>
-            <img className='card-img-top' src={img5}></img>
-            <div className='card-body'>
-              <h5 className='card-text'>Sekiro</h5>
-              <p className='card-text'>R$ 200,80</p>
-              <div>
-                <button className='btnComprar'><BsCart />COMPRAR</button>
-              </div>
-            </div>
-          </div>
-
-        </Card>
-        <Card>
-          <div className=''>
-            <img className='card-img-top' src={img6}></img>
-            <div className='card-body'>
-              <h5 className='card-text'>The Withcer 3 </h5>
-              <p className='card-text'>R$ 98,50</p>
-              <div>
-                <button className='btnComprar'><BsCart />COMPRAR</button>
-              </div>
-            </div>
-          </div>
-
-        </Card>
-
-        <Card>
-          <div className=''>
-            <img className='card-img-top' src={img7}></img>
-            <div className='card-body'>
-              <h5 className='card-text'>Elsen Ring</h5>
-              <p className='card-text'>R$ 250,00</p>
-              <div>
-                <button className='btnComprar'><BsCart />COMPRAR</button>
-              </div>
-            </div>
-          </div>
-
-        </Card>
-      </div>
-
-      <div>
-        <div className='banners'>
-          <img src={img8} className='banner' />
         </div>
-        <div className='banners'>
-          <img src={img9} className='banner' />
+        <h1 className="container--titulo">Mais vendidos</h1>
+        <div className="MaisVendidos">
+            <Produto>
+              <ProdutoImagem src={img4}/>
+              <ProdutoTexto>Dark Souls</ProdutoTexto>
+              <ProdutoTexto>R$ 200</ProdutoTexto>
+              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
+            </Produto>
+            <Produto>
+              <ProdutoImagem src={img4}/>
+              <ProdutoTexto>Dark Souls</ProdutoTexto>
+              <ProdutoTexto>R$ 200</ProdutoTexto>
+              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
+            </Produto>
+            <Produto>
+              <ProdutoImagem src={img4}/>
+              <ProdutoTexto>Dark Souls</ProdutoTexto>
+              <ProdutoTexto>R$ 200</ProdutoTexto>
+              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
+            </Produto>
+            <Produto>
+              <ProdutoImagem src={img4}/>
+              <ProdutoTexto>Dark Souls</ProdutoTexto>
+              <ProdutoTexto>R$ 200</ProdutoTexto>
+              <ProdutoBotao><BsCart />COMPRAR</ProdutoBotao>
+            </Produto>
         </div>
-      </div>
-
-      <div>
-        <img src={img10} className='bannerteste' />
-      </div>
-      <br /> <br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br />
-      <br /><br /><br /><br />
-      <div>
-        <h1 className='tituloCT'>Categorias</h1>
-        <div className='cates'>
-          <img className='imgsCat' src={img11}></img>
+        <div className="container--banner">
+          <img src={img8} className="banner" />
+          <img src={img9} className="banner" />
         </div>
-        <div className='cates'>
-          <img className='imgsCat' src={img12}></img>
+        <div className="container--bannerFull">
+          <img src={img10} className="bannerteste" />
         </div>
-        <div className='cates'>
-          <img className='imgsCat' src={img13}></img>
-        </div>
-        <div className='cates'>
-          <img className='imgsCat' src={img14}></img>
-        </div>
-        <div className='cates'>
-          <img className='imgsCat' src={img15}></img>
-        </div>
-        <div className='cates'>
-          <img className='imgsCat' src={img16}></img>
+        <h1>Categorias</h1>
+        <div className="container--categorias">
+          <img src={img11}></img>
+          <img src={img12}></img>
+          <img src={img13}></img>
+          <img src={img14}></img>
+          <img src={img15}></img>
+          <img src={img16}></img>
         </div>
       </div>
     </>
-
   );
-}
+};
 
-export default Home
-
+export default Home;
