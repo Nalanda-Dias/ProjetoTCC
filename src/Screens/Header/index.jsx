@@ -13,7 +13,8 @@ import {
   BsMouse2,
   BsDisplay,
   BsFillCartFill,
-  BsFillHeartFill,
+  BsFillHeartFill, 
+  BsHeartFill,
 } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
 import Menu from "../SideBar";
@@ -40,7 +41,7 @@ export const Header = () => {
             <div className="input-group search-box">
               <span className="input-group-btn">
                 <button className="btn btn-secondary" type="button">
-                  <img src={Vector} alt="Infinite" />
+                  <img src={Vector} alt="Infinite" className="upa" />
                 </button>
               </span>
               <input
@@ -54,11 +55,12 @@ export const Header = () => {
           {user?.token ? (
             <div className="user">
               <img src={LogoBg} alt="Avatar" className="avatar" />
-              <span style={{color:"white"}}>
+              <span className="userss" style={{color:"white"}}>
                 Olá {user.nome.split(' ')[0]}
                 <br />
                 <a onClick={() => user.logout()} className="link">Sair</a>
               </span>
+              <br/>
               <a href="/carrinho" className="link2">
                 <BsFillCartFill />
               </a>
@@ -76,6 +78,7 @@ export const Header = () => {
           )}
         </nav>
       </div>
+
       <nav className="navbar">
         <div className="DivFunc">
           <a href="/home" className="links">
@@ -100,6 +103,7 @@ export const Header = () => {
             Pcs
           </a>
         </div>
+
       </nav>
     </>
   );

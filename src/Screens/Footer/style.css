@@ -51,17 +51,46 @@ footer p, h4{
     flex-wrap: wrap;
 }
 
-@media (max-width: 570px) 
-{
+@media (min-width: 412px) and (max-width: 768px) {
+    .ContainerFoo
+    {
+        height: 700px;
+    }
     .logofooter
     {
-        margin-left: -130px;
+        margin-top: -40px;
+        margin-left: -100px;
     }
     
     .redes
     {
         margin-top: -10px;
-        margin-bottom: 40px;
+        margin-left: -60px;
+    }
+
+    .Atendimento
+    {
+        margin-top: -210px;
+        margin-left: -60px;
+    }
+
+    .Contato
+    {
+        margin-top: -220px;
+        margin-left: -60px;
+    }
+
+    .tituloss{
+        font-size: 16px;
+    }
+
+    .corpo{
+        font-size: 12px;
     }
    
+    .logofooter
+    {
+        width: 105px;
+        height: 70px;
+    }
 }

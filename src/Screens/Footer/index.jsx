@@ -14,14 +14,14 @@ export default function Footer() {
                 <img className='logofooter' src={Logo} alt="Infinite"/>
                 <div className="ContainerFoo--AtendimentoEhRedes">
                     <div className="Atendimento">
-                        <h4>Atendimento</h4>
-                        <p>Horário de atendimento: 08:00 as 19:00 - <br/>
+                        <h4 className="tituloss">Atendimento</h4>
+                        <p className="corpo">Horário de atendimento: 08:00 as 19:00 - <br/>
                             Segunda a Sábado
                         </p>
                     </div>
                     <div className="redes">
                         <div>
-                            <h4>Redes Sociais</h4>
+                            <h4 className="tituloss">Redes Sociais</h4>
                         </div>
                         <div className="RedesSociais">
                             <a href="#" className="icon"><img src={Face} alt="Infinite"/></a>
@@ -31,8 +31,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="Contato">
-                    <h4>Contato</h4>
-                    <p>Email: Infinitegames@gmail.com<br/>
+                    <h4 className="tituloss">Contato</h4>
+                    <p className="corpo">Email: Infinitegames@gmail.com<br/>
                     Telefone: (11) 98574-6558
                     </p>
                 </div>

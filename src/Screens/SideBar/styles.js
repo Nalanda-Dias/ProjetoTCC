@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Container = styled.div`
   z-index: 10000;
   background-color: #002973;
@@ -28,6 +30,11 @@ export const Container = styled.div`
       opacity: 1;
       width: 400px;
     }
+  }
+
+  @media (min-width: 412px) and (max-width: 768px) {
+    width: 100%;
+
   }
 `;
 
