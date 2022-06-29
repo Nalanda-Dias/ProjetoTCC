@@ -41,13 +41,6 @@ form {
   height: 34px;
 }
 
-input {
-  border: 0;
-  font-size: 15px;
-  text-align: center;
-  border-radius: 4px;
-}
-
 .search-box .input-group-btn {
   position: absolute;
   left: 0;
@@ -73,6 +66,7 @@ input {
   text-align: left;
   color: #fff;
   font-size: 16px;
+  cursor: pointer;
   font-family: Ubuntu;
 }
 
@@ -84,7 +78,7 @@ a:hover {
   color: #ffb703;
 }
 
-nav svg:hover {
+nav > svg:hover{
   color: #ffb703;
 }
 
@@ -159,7 +153,19 @@ a:active {
   background-color: #002973;
 }
 
-.linkheart
+nav input {
+  border: 0;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 4px !important;
+}
+  
+@media (max-width: 570px) {
+  
+  .busque {
+    width: 176px;
+  }
+.input-group, .search-box
 {
   display: none;
 }
@@ -225,4 +231,4 @@ a:active {
   .DivFunc {
     width: 570px;
   }
-}
+}}
