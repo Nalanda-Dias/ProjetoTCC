@@ -15,21 +15,17 @@ export const Produto = styled.div`
   border-radius: 6px;
 
   @media (min-width: 412px) and (max-width: 768px) {
-    width: 180px;
-    
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   }
-
 `;
 
 export const ProdutoImagem = styled.img`
   width: 100%;
   height: 168.62px;
   border-radius: 6px;
-
-  @media (min-width: 412px) and (max-width: 768px) {
-    
-  }
-
+  object-fit: cover;
 `;
 
 export const ProdutoBotao = styled.button`

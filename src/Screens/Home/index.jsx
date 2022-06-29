@@ -28,7 +28,7 @@ function Home() {
     async function buscaTop5() {
       const dados = await Api.get("produto/top4");
       console.log(dados.data.data);
-      setTop5(dados.data.data)
+      setTop5(dados.data.data);
     }
     buscaTop5();
   }, []);
@@ -117,19 +117,41 @@ function Home() {
           </div>
         </div>
         <h1 className="container--titulo">Mais vendidos</h1>
+        <div className="agoraVai">
         <div className="MaisVendidos">
           {top5.map((x) => {
-            return(
-            <Produto key={x.produtoID}>
-              <ProdutoImagem src={x.urlCapa} />
-              <ProdutoTexto>{x.nome}</ProdutoTexto>
-              <ProdutoTexto>R$ {x.preco}</ProdutoTexto>
-              <ProdutoBotao>
-                <BsCart />
-                COMPRAR
-              </ProdutoBotao>
-            </Produto>);
+            return (
+              <Produto key={x.produtoID}>
+                <ProdutoImagem src={x.urlCapa} />
+                <ProdutoTexto>{x.nome}</ProdutoTexto>
+                <ProdutoTexto>R$ {x.preco}</ProdutoTexto>
+                <ProdutoBotao>
+                  <BsCart />
+                  COMPRAR
+                </ProdutoBotao>
+              </Produto>
+            );
           })}
+          <Produto>
+            <ProdutoImagem src={img13} />
+            <ProdutoTexto>Darkiro Souls</ProdutoTexto>
+            <ProdutoTexto>R$ 200</ProdutoTexto>
+            <ProdutoBotao>
+              <BsCart />
+              COMPRAR
+            </ProdutoBotao>
+          </Produto>
+
+          <Produto>
+            <ProdutoImagem src={img13} />
+            <ProdutoTexto>Darkiro Souls</ProdutoTexto>
+            <ProdutoTexto>R$ 200</ProdutoTexto>
+            <ProdutoBotao>
+              <BsCart />
+              COMPRAR
+            </ProdutoBotao>
+          </Produto>
+          </div>
         </div>
         <div className="container--banner">
           <img src={img8} className="banner" />
@@ -143,7 +165,10 @@ function Home() {
           <img src={img11}></img>
           <img src={img12}></img>
           <img src={img13}></img>
-          <div className="teste"> <br/></div>
+          <div className="teste">
+            {" "}
+            <br />
+          </div>
           <img src={img14}></img>
           <img src={img15}></img>
           <img src={img16}></img>

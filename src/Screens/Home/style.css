@@ -151,7 +151,7 @@
   margin-top: 30px;
 }
 
-.container--categorias>img {
+.container--categorias > img {
   cursor: pointer;
 }
 
@@ -166,14 +166,20 @@
 .carousel-control-prev {
   height: 100%;
 }
-.teste
-{
+.teste {
   display: none;
 }
 @media (min-width: 412px) and (max-width: 768px) {
+  .carrosel{
+    height: 200px;
+  }
 
   .containerPrincipal {
     width: 100%;
+  }
+
+  .carousel-indicators {
+    display: none;
   }
 
   .carousel-control-prev {
@@ -186,48 +192,64 @@
     height: 244px;
   }
 
-  .MaisVendidos div:nth-child(1) {
-    margin-left: 20px;}
+  /* .MaisVendidos div:nth-child(1) {
+    margin-left: 20px;
+  } */
+
+  .MaisVendidos {
+    width: 941px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .agoraVai {
+    margin-left: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+  }
 
   .container--titulo {
-    margin-top: -180px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .banner {
-    width: 170px;
-    height: 120px;
+    width: 100%;
     cursor: pointer;
-    margin-left: 30px;
+  }
 
+  .banner:nth-child(1){
+    margin-bottom: 20px;
   }
 
   .bannerteste {
-    width: 349px;
-    height: 140px;
-    cursor: pointer;
-    margin-top: -170px;
-    margin-left: 01px;
+    display: none;
   }
-
 
   .container--banner {
-    width: 30px;
-
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
   }
 
-  .container--tituloo
-  {
-    margin-top: -50px;
-    margin-left: 50px;
+  .container--bannerFull{
+    display: none;
   }
-  .container--categorias{
-    width: 90px;
-    margin-left: 12px;
-  
-    }
-  .container--categorias>img {
-    width: 65px;
 
+  .container--tituloo {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .container--categorias {
+    width: 90%;
+    margin-left: 20px;
+    overflow: auto;
+  }
+  .container--categorias > img {
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
 }
