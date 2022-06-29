@@ -1,0 +1,14 @@
+.tentativa
+{
+    display: none;
+}
+
+@media (min-width: 412px) and (max-width: 768px) {
+    .tentativa
+{
+    display: block;
+}
+
+.linkk{
+    text-decoration: none;}
+}
