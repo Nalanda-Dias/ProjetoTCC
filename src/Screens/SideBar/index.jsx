@@ -33,8 +33,7 @@ const Sidebar = ({ active }) => {
         </div>
         <SidebarItem Icon={FaUserAlt} Text="Minha conta" />
         <SidebarItem Icon={BsCart} Text="Meus pedidos" />
-        <SidebarItem Icon={BsHeartFill} Text="Favoritos" />
-
+        <a href="/agendamento" className="linkk"><SidebarItem Icon={BsHeartFill} Text="Favoritos" /></a>
       </Content>
     </Container>
   );
