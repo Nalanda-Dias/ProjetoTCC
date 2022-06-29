@@ -78,7 +78,7 @@ export default function LoginCad() {
     }
   }
 
-  if (auth.token || auth.token == null) {
+  if (auth.token == null) {
     return (
       <>
         <ToastContainer />

@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 import { BsCart } from "react-icons/bs";
 import React, { useEffect, useState } from "react";
 import { Api } from "../../services/api";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import {
   ProdutoBotao,
   ProdutoImagem,
@@ -15,6 +15,7 @@ import img1 from "../../assents/minecraft.jpg"
 
 const Games = () => {
   const [produtos, setProduto] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function getx() {
@@ -39,104 +40,13 @@ const Games = () => {
                 <ProdutoImagem src={x.urlCapa} />
                 <ProdutoTexto>{x.nome}</ProdutoTexto>
                 <ProdutoTexto>R$ {x.preco}</ProdutoTexto>
-                <ProdutoBotao>
+                <ProdutoBotao onClick={() => navigate(`/detalhes/${x.produtoID}`)}>
                   <BsCart />
                   COMPRAR
                 </ProdutoBotao>
               </Produto>
             );
           })}
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          <Produto>
-            <ProdutoImagem src={img1} />
-            <ProdutoTexto>Minescraft</ProdutoTexto>
-            <ProdutoTexto>R$ 90</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-          
         </div>
       </div>
     </>

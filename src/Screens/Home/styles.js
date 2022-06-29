@@ -17,7 +17,6 @@ export const Produto = styled.div`
 
 export const ProdutoImagem = styled.img`
   width: 100%;
-  object-fit: cover;
   height: 168.62px;
   border-radius: 6px;
 `;

@@ -3,6 +3,7 @@ import Footer from "./Screens/Footer/index";
 import { AppRoutes } from "./Routes";
 import { Header } from "./Screens/Header/index";
 import { AuthProvider } from "./context/AuthProvider";
+import { Router } from "react-router";
 
 export default function App() {
   return (

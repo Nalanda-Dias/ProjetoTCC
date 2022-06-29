@@ -1,191 +1,224 @@
-.DivEnd
-{
-    background-color: white;
-    width: 936px;
-    height: 378.41px;
-    border-radius: 14px;
-    padding: 20px;
-    margin-left: 192px;
+.DivEnd {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  padding: 20px;
 }
 
-.divend
-{
-    font-family: roboto;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: left;
-    color: black;
+.divend {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
 }
 
-.titulo01
-{
-    color:black;
-    font-size: 32px;
-    font-weight: 300;
+.tituloCar {
+  display: flex;
+  font-size: 32px;
+  font-weight: 300;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.icone
-{
-    float: left;
-    color: #DF9F00;
+.tituloCar > h2 {
+  margin-bottom: 0px;
 }
 
-.conteudo
-{
-    margin-top: -47px;
-    margin-left: 8px;
+.icone {
+  color: #df9f00;
+  width: 30px;
+  height: 30px;
 }
 
-.button01
-{
-    background-color: transparent;
-    border: 0;
- margin-left: 10px;
-    margin-left: 320px;
+.icone > svg > path {
+  color: #df9f00;
+  width: 100%;
+  height: 100%;
 }
 
-.button02
-{
-    background-color: transparent;
-    border: 0;
-    margin-left: -9px;
+.conteudo {
+  font-weight: 700;
+  padding-left: 5px;
+}
+.conteudo:nth-child(3n) {
+  margin-bottom: 22px;
 }
 
-.button03
-{
-    background-color: transparent;
-    border: 0;
-    margin-top: -30px;
-    margin-left: 305px;
-}
-.DivProd
-{
-    width: 936px;
-    height: 575px;
-    border-radius: 14px;
-    background-color: white;
-    margin-top: 43.50px; 
-    padding: 20px;
-    margin-left: 192px;
-
+.conteudo > input {
+  margin-right: 10px;
+  outline-color: #df9f00;
 }
 
-.icone1
-{
-    float: left;
-    color: #DF9F00;
-    width: 28px;
-    height: 20px;
-    text-align: center;
-    margin-top: 5px;
+.conteudo > p {
+  margin-bottom: 10px;
 }
 
-.imgProd
-{
-    width: 150px;
-    height: 200px;
-    margin-top: -40px;
-    margin-left: 10px;
-    float: left;
+.DivProd {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background-color: white;
+  padding: 20px;
 }
 
-.Legenda01
-{
-    font-family: roboto;
-    font-size: 25px;
-    font-weight: 700;
-    color: black;
-    margin-top:-37px;
-
+.DivProd--conteudo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px;
 }
 
-.Quant
-{
-    font-family: roboto;
-    font-size: 23px;
-    font-weight: 400;
-    margin-top:-50px;
-    margin-left: 480px;
+.imgProd {
+  width: 150px;
+  height: 200px;
 }
 
-.preco
-{
-    font-family: roboto;
-    font-size: 23px;
-    font-weight: 400;
-    text-align: right;
-    margin-top: -85px;
-    margin-right: 15px;
+.descricaoJogo {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.icone2
-{
-    float: left;
-    color: #ff0909;
-    padding: 0;
+.descricaoJogo > p {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
 }
 
-.DivProd1
-{
- margin-top: 250px;
+.quantidadeCar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.DivFinal
-{
-    width: 936px;
-    height: 126px;
-    background-color: white;
-    margin-top: 43.50px; 
-    margin-left: 192px;
-    border-radius: 14px;
+.quantidadeCar--controles{
+    display: flex;
+    align-items: center;
 }
 
-.total
-{
-    font-family: roboto;
-    font-size: 30px;
-    font-weight: 700;
-    float: left;
-    padding: 15px;
+.quantidadeCar--controles > span {
+  font-size: 25px;
 }
 
-.button04
-{
-    border: 2px solid #DF9F00;
-    width: 311.5px;
-    height: 86px;
-    background-color: #DF9F00;
-    color: black;
-    font-weight: bold;
-    font-family: roboto;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 5px;
+.controleSoma {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 
-.button05
-{
-    border: 3px solid #DF9F00;
-    width: 311.5px;
-    height: 86px;
-    background-color: transparent;
-    color: #DF9F00;
-    font-weight: bold;
-    font-family: roboto;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 5px;
+.controleSoma:hover {
+  color: #df9f00
 }
 
-.button05:hover
-{
-    color: black;
-    background-color: #DF9F00;
+.controleMenos {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 
-.button04:hover
-{
-    color: #DF9F00;
-    background-color: transparent;
-    border: 3px solid #DF9F00;
+.controleMenos:hover {
+  cursor: pointer;
+  color: #df9f00
+}
+
+.removeItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.removeItem > svg > path {
+  color: red;
+}
+
+.quantidadeCar > span {
+  font-size: 25px;
+}
+
+.preco > p {
+  font-size: 25px;
+}
+
+.Quant {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.preco {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.icone2 {
+  float: left;
+  color: #ff0909;
+  padding: 0;
+}
+
+.DivProd1 {
+  margin-top: 250px;
+}
+
+.DivFinal {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.total {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.button04 {
+  border: 2px solid #df9f00;
+  width: 311.5px;
+  height: 86px;
+  background-color: #df9f00;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.button05 {
+  border: 3px solid #df9f00;
+  width: 311.5px;
+  height: 86px;
+  background-color: transparent;
+  color: #df9f00;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.button05:hover {
+  color: black;
+  background-color: #df9f00;
+}
+
+.button04:hover {
+  color: #df9f00;
+  background-color: transparent;
+  border: 3px solid #df9f00;
+}
+
+.containerFullCar {
+  width: 941px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 125px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
 }

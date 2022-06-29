@@ -18,7 +18,7 @@ export const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" exact element={<LoginCad />} />
+        <Route path="/" exact element={<LoginCad />} />
         <Route path="/home" exact element={<Home />} />
         <Route path="/games" exact element={<Games />} />
         <Route path="/hardware" exact element={<Hardware />} />

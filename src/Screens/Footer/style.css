@@ -3,7 +3,7 @@ footer
     box-sizing: border-box;
     background-color: #002973;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-top: 125px;
     display: flex;
     justify-content: center;

@@ -66,7 +66,7 @@ export const Header = () => {
           ) : (
             <div className="user">
               <img src={Avatar} alt="Avatar" className="avatar" />
-              <a href="/login" className="link">
+              <a href="/" className="link">
                 Faça login <br /> ou cadastre-se{" "}
               </a>
               <a href="/carrinho" className="link2">
