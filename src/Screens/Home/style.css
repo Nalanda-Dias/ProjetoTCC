@@ -166,7 +166,10 @@
 .carousel-control-prev {
   height: 100%;
 }
-
+.teste
+{
+  display: none;
+}
 @media (min-width: 412px) and (max-width: 768px) {
 
   .containerPrincipal {
@@ -204,7 +207,7 @@
     height: 140px;
     cursor: pointer;
     margin-top: -170px;
-    margin-left: 10px;
+    margin-left: 01px;
   }
 
 
@@ -220,7 +223,8 @@
   }
   .container--categorias{
     width: 90px;
-    margin-left: 10px;
+    margin-left: 12px;
+  
     }
   .container--categorias>img {
     width: 65px;

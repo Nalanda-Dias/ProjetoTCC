@@ -20,13 +20,8 @@ import { Link, NavLink } from "react-router-dom";
 import Menu from "../SideBar";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-<<<<<<< HEAD
-import SideBar from '../SideBar'
-import { GiHamburgerMenu } from "react-icons/gi";
-=======
 import SideBar from "../SideBar";
 import { useAuth } from "../../context/AuthProvider/useAuth";
->>>>>>> 8af8c1950549ad450a711799872c2c0ac6841115
 
 export const Header = () => {
   const [sideBar, setSidebar] = useState(false);
@@ -57,33 +52,22 @@ export const Header = () => {
               />
             </div>
           </form>
-<<<<<<< HEAD
-          <div className="user">
-          <a href="/login" ><img src={Avatar} alt="Avatar" className="avatar" /></a>
-            <a href="/login" className="link">
-              Faça login <br /> ou cadastre-se{" "}
-            </a>
-            <a href="/carrinho" className="link2">
-              <BsFillCartFill />
-            </a>
-          
-          </div>
-=======
           {user?.token ? (
             <div className="user">
               <img src={LogoBg} alt="Avatar" className="avatar" />
-              <span style={{color:"white"}}>
+              <span className="userss" style={{color:"white"}}>
                 Olá {user.nome.split(' ')[0]}
                 <br />
                 <a onClick={() => user.logout()} className="link">Sair</a>
               </span>
+              <br/>
               <a href="/carrinho" className="link2">
                 <BsFillCartFill />
               </a>
             </div>
           ) : (
             <div className="user">
-              <img src={Avatar} alt="Avatar" className="avatar" />
+              <a href="/login"><img src={Avatar} alt="Avatar" className="avatar" /></a>
               <a href="/login" className="link">
                 Faça login <br /> ou cadastre-se{" "}
               </a>
@@ -92,7 +76,6 @@ export const Header = () => {
               </a>
             </div>
           )}
->>>>>>> 8af8c1950549ad450a711799872c2c0ac6841115
         </nav>
       </div>
 

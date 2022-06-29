@@ -34,6 +34,8 @@ export const Container = styled.div`
 
   @media (min-width: 412px) and (max-width: 768px) {
     width: 100%;
+    .linkk{
+    text-decoration: none;}
   }
 `;
 

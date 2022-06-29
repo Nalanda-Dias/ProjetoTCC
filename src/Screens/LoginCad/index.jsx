@@ -95,7 +95,7 @@ export default function LoginCad() {
                   type="email"
                   name="email"
                   id="email"
-                  className="form-control"
+                  className="form-control email"
                 />
               </div>
               <div className="wrap-input">

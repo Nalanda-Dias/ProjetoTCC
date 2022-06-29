@@ -1,7 +1,9 @@
-import { BsCart, BsHeartFill, 
+import {
+  BsCart, BsHeartFill,
   BsHouseDoor, BsController,
-  BsReverseLayoutTextWindowReverse,BsMouse2, 
-  BsDisplay } from "react-icons/bs";
+  BsReverseLayoutTextWindowReverse, BsMouse2,
+  BsDisplay
+} from "react-icons/bs";
 // export default Menu
 
 import React from "react";
@@ -9,6 +11,7 @@ import { Container, Content } from "./styles";
 import { FaTimes, FaUserAlt } from "react-icons/fa";
 import SidebarItem from "../SidebarItem";
 import "./styles.css";
+import Avatar from "../../assents/Avatar.png";
 
 const Sidebar = ({ active }) => {
   const closeSidebar = () => {
@@ -19,18 +22,19 @@ const Sidebar = ({ active }) => {
     <Container className="sidebar" sidebar={active}>
       <FaTimes onClick={closeSidebar} />
       <Content className="content">
-      <div className="tentativa">
-        <a href="/home"><SidebarItem Icon={BsHouseDoor} Text="Home" /></a>
-        <SidebarItem Icon={BsController} Text="Games" />
-        <SidebarItem Icon={BsReverseLayoutTextWindowReverse} Text="Hardware" />
-        <SidebarItem Icon={BsMouse2} Text="Periféricos" />
-        <SidebarItem Icon={BsDisplay} Text="Pcs" />
+        <div className="tentativa">
+  
+          <a href="/home" className="linkk"><SidebarItem Icon={BsHouseDoor} Text="Home" /></a>
+          <a href="/games" className="linkk"><SidebarItem Icon={BsController} Text="Games" /></a>
+          <a href="/hardware" className="linkk"><SidebarItem Icon={BsReverseLayoutTextWindowReverse} Text="Hardware" /></a>
+          <a href="/perifericos" className="linkk"><SidebarItem Icon={BsMouse2} Text="Periféricos" /></a>
+          <a href="/pcs" className="linkk"><SidebarItem Icon={BsDisplay} Text="Pcs" /></a>
 
         </div>
         <SidebarItem Icon={FaUserAlt} Text="Minha conta" />
         <SidebarItem Icon={BsCart} Text="Meus pedidos" />
-        <SidebarItem Icon={BsHeartFill} Text="Favoritos"  />
-       
+        <SidebarItem Icon={BsHeartFill} Text="Favoritos" />
+
       </Content>
     </Container>
   );

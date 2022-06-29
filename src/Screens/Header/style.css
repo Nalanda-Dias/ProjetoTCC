@@ -160,20 +160,13 @@ nav input {
   border-radius: 4px !important;
 }
   
-@media (max-width: 570px) {
-  
-  .busque {
-    width: 176px;
-  }
-.input-group, .search-box
-{
-  display: none;
-}
+
 
 @media (min-width: 412px) and (max-width: 768px) 
 {
 
-  .busque{
+
+  .input-group, .search-box, .busque{
     display: none;
   }
   .linkheart
@@ -205,7 +198,7 @@ nav input {
   .avatar {
     width: 30px;
     height: 30px;
-    margin-left: -100px;
+    margin-left: -120px;
     float: left;
     cursor: pointer;
   }
@@ -215,7 +208,7 @@ nav input {
   }
 
   .link2 {
-    margin-left: -70px;
+    margin-left: -90px;
     margin-top: -10px;
   }
 
@@ -231,4 +224,4 @@ nav input {
   .DivFunc {
     width: 570px;
   }
-}}
+}

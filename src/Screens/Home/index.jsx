@@ -143,6 +143,7 @@ function Home() {
           <img src={img11}></img>
           <img src={img12}></img>
           <img src={img13}></img>
+          <div className="teste"> <br/></div>
           <img src={img14}></img>
           <img src={img15}></img>
           <img src={img16}></img>

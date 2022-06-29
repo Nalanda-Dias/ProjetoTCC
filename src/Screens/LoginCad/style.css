@@ -180,12 +180,54 @@ hr {
   background-color: #f7f7f7;
 }
 
-@media (max-width: 570px) {
-    .container
+@media (min-width: 412px) and (max-width: 768px) {
+    .containerFull
     {
-        margin-left: -520px;
+        margin-left: -80px;
         float:none;
+        margin-top: 30px;
     }
+    .login-form-title
+    {
+      margin-left: -30px;
+    }
+    
+    .legenda
+    {
+      margin-left: 10px;
+    }
+    .form-control, .email
+    {
+      margin-left: 10px;
+      width: 350px;
+    }
+
+    .btnEntrar
+    {
+      margin-left: 10px;
+      width: 350px;
+    }
+
+    .btnEntrar1{
+      width: 160px;
+      font-size: 10px;
+      margin-left: 10px;
+    }
+    .btnEntrar2{
+      width: 170px;
+      font-size: 10px;
+      margin-left: -100px;
+    }
+
+    .legenda1
+    {
+      margin-left: -30px;
+    }
+    .botoes
+    {
+      width: 360px;
+    }
+
 
     .linhavertical {
         display: none;
@@ -194,7 +236,19 @@ hr {
     .container2
     {
         margin-top: 100px;
-        margin-left: -500px;
+        margin-left: -01px;
+    }
+
+    .login-form
+    {
+      margin-left: 100px;
+    }
+
+    .btnEntrar3
+    {
+      width: 350px;
+      font-size: 10px;
+      margin-left: 10px;
     }
 }
 

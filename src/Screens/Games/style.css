@@ -20,3 +20,11 @@
 .containerGames div:nth-child(4n+1) {
   margin-left: 0px;
 }
+
+@media (min-width: 412px) and (max-width: 768px) {
+  .containerGames {
+    width: 441px;
+    margin-left: 100px;
+    margin-top: -20px;
+  }
+}
