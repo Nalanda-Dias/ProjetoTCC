@@ -159,17 +159,28 @@ a:active {
   background-color: #002973;
 }
 
-@media (max-width: 570px) {
-  
-  .busque {
-    width: 176px;
-  }
-.input-group, .search-box
+.linkheart
 {
-  width: 176px;
+  display: none;
 }
+
+@media (min-width: 412px) and (max-width: 768px) 
+{
+
+  .busque{
+    display: none;
+  }
+  .linkheart
+  {
+    display: block;
+  }
+  
+  .upa {
+    display: none;
+  }
+
   .form-inline {
-    margin-left: 20px;
+    margin-left: -20px;
   }
 
   .logo {
@@ -182,40 +193,36 @@ a:active {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
-  .avatar{
+  .avatar {
     width: 30px;
     height: 30px;
-    margin-left: -80px;
+    margin-left: -100px;
     float: left;
     cursor: pointer;
   }
-  .link{
+
+  .link {
     display: none;
   }
 
-  .link2{
-    margin-left: -50px;
+  .link2 {
+    margin-left: -70px;
     margin-top: -10px;
   }
 
-  .navbar
-  {
-    width: 100%;
-    height: 70px;
-    
+  .navbar {
+   display: none;
   }
 
-  .links
-  {
-    width:95px;
+  .links {
+    width: 95px;
     font-size: 14px;
   }
 
-  .DivFunc
-  {
+  .DivFunc {
     width: 570px;
   }
 }

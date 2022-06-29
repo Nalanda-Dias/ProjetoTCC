@@ -13,6 +13,12 @@ export const Produto = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+
+  @media (min-width: 412px) and (max-width: 768px) {
+    width: 180px;
+    
+  }
+
 `;
 
 export const ProdutoImagem = styled.img`
@@ -20,6 +26,11 @@ export const ProdutoImagem = styled.img`
   object-fit: cover;
   height: 168.62px;
   border-radius: 6px;
+
+  @media (min-width: 412px) and (max-width: 768px) {
+    
+  }
+
 `;
 
 export const ProdutoBotao = styled.button`

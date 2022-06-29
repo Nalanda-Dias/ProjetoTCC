@@ -12,13 +12,15 @@ import {
   BsMouse2,
   BsDisplay,
   BsFillCartFill,
-  BsFillHeartFill,
+  BsFillHeartFill, 
+  BsHeartFill,
 } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
 import Menu from "../SideBar";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import SideBar from '../SideBar'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Header = () => {
   const [sideBar, setSidebar] = useState(false);
@@ -37,7 +39,7 @@ export const Header = () => {
             <div className="input-group search-box">
               <span className="input-group-btn">
                 <button className="btn btn-secondary" type="button">
-                  <img src={Vector} alt="Infinite" />
+                  <img src={Vector} alt="Infinite" className="upa" />
                 </button>
               </span>
               <input
@@ -56,9 +58,11 @@ export const Header = () => {
             <a href="/carrinho" className="link2">
               <BsFillCartFill />
             </a>
+          
           </div>
         </nav>
       </div>
+
       <nav className="navbar">
         <div className="DivFunc">
           <a href="/home" className="links">
@@ -83,6 +87,7 @@ export const Header = () => {
             Pcs
           </a>
         </div>
+
       </nav>
     </>
   );

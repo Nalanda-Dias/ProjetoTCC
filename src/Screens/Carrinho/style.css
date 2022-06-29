@@ -1,5 +1,4 @@
-.DivEnd
-{
+.DivEnd {
     background-color: white;
     width: 936px;
     height: 378.41px;
@@ -8,8 +7,7 @@
     margin-left: 192px;
 }
 
-.divend
-{
+.divend {
     font-family: roboto;
     font-size: 25px;
     font-weight: 400;
@@ -17,61 +15,54 @@
     color: black;
 }
 
-.titulo01
-{
-    color:black;
+.titulo01 {
+    color: black;
     font-size: 32px;
     font-weight: 300;
 }
 
-.icone
-{
+.icone {
     float: left;
     color: #DF9F00;
 }
 
-.conteudo
-{
+.conteudo {
     margin-top: -47px;
     margin-left: 8px;
 }
 
-.button01
-{
+.button01 {
     background-color: transparent;
     border: 0;
- margin-left: 10px;
+    margin-left: 10px;
     margin-left: 320px;
 }
 
-.button02
-{
+.button02 {
     background-color: transparent;
     border: 0;
     margin-left: -9px;
 }
 
-.button03
-{
+.button03 {
     background-color: transparent;
     border: 0;
     margin-top: -30px;
     margin-left: 305px;
 }
-.DivProd
-{
+
+.DivProd {
     width: 936px;
     height: 575px;
     border-radius: 14px;
     background-color: white;
-    margin-top: 43.50px; 
+    margin-top: 43.50px;
     padding: 20px;
     margin-left: 192px;
 
 }
 
-.icone1
-{
+.icone1 {
     float: left;
     color: #DF9F00;
     width: 28px;
@@ -80,8 +71,7 @@
     margin-top: 5px;
 }
 
-.imgProd
-{
+.imgProd {
     width: 150px;
     height: 200px;
     margin-top: -40px;
@@ -89,27 +79,24 @@
     float: left;
 }
 
-.Legenda01
-{
+.Legenda01 {
     font-family: roboto;
     font-size: 25px;
     font-weight: 700;
     color: black;
-    margin-top:-37px;
+    margin-top: -37px;
 
 }
 
-.Quant
-{
+.Quant {
     font-family: roboto;
     font-size: 23px;
     font-weight: 400;
-    margin-top:-50px;
+    margin-top: -50px;
     margin-left: 480px;
 }
 
-.preco
-{
+.preco {
     font-family: roboto;
     font-size: 23px;
     font-weight: 400;
@@ -118,30 +105,26 @@
     margin-right: 15px;
 }
 
-.icone2
-{
+.icone2 {
     float: left;
     color: #ff0909;
     padding: 0;
 }
 
-.DivProd1
-{
- margin-top: 250px;
+.DivProd1 {
+    margin-top: 250px;
 }
 
-.DivFinal
-{
+.DivFinal {
     width: 936px;
     height: 126px;
     background-color: white;
-    margin-top: 43.50px; 
+    margin-top: 43.50px;
     margin-left: 192px;
     border-radius: 14px;
 }
 
-.total
-{
+.total {
     font-family: roboto;
     font-size: 30px;
     font-weight: 700;
@@ -149,8 +132,7 @@
     padding: 15px;
 }
 
-.button04
-{
+.button04 {
     border: 2px solid #DF9F00;
     width: 311.5px;
     height: 86px;
@@ -163,8 +145,7 @@
     border-radius: 5px;
 }
 
-.button05
-{
+.button05 {
     border: 3px solid #DF9F00;
     width: 311.5px;
     height: 86px;
@@ -177,15 +158,108 @@
     border-radius: 5px;
 }
 
-.button05:hover
-{
+.button05:hover {
     color: black;
     background-color: #DF9F00;
 }
 
-.button04:hover
-{
+.button04:hover {
     color: #DF9F00;
     background-color: transparent;
     border: 3px solid #DF9F00;
+}
+
+@media (min-width: 412px) and (max-width: 768px) {
+    .DivEnd {
+        width: 336px;
+        height: 220.41px;
+        margin-left: 38px;
+    }
+
+    .divend {
+        font-size: 15px;
+    }
+
+    .titulo01 {
+        font-size: 22px;
+    }
+
+    .DivProd {
+        width: 336px;
+        height: 575px;
+        margin-left: 38px;
+
+    }
+
+    .imgProd {
+        width: 100px;
+        height: 120px;
+        margin-left: 10px;
+    }
+
+    .Legenda01 {
+        font-size: 15px;
+        margin-left: 127px;
+        margin-top: -30px;
+    }
+
+    .Quant {
+        font-size: 16px;
+        margin-top: -10px;
+        margin-left: 130px;
+        width: 50px;
+    }
+
+    .button01 {
+
+        margin-left: 10px;
+    }
+
+    .button02 {
+
+        margin-left: -8px;
+    }
+
+    .button03 {
+        margin-top: -160px;
+        margin-left: 155px;
+        width: 100px;
+    }
+
+    .preco {
+        font-size: 15px;
+        margin-top: -103px;
+        margin-left: 235px;
+        width: 20px;
+    }
+
+    .DivFinal {
+        width: 336px;
+        height: 126px;
+        margin-left: 38px;
+    }
+
+    .total {
+        font-size: 20px;  
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+
+    .button04 {
+        width: 97.5px;
+        height: 26px;
+        margin-top: 25px;
+        margin-left: 20px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    .button05 {
+        width: 95.5px;
+        height: 46px;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
 }

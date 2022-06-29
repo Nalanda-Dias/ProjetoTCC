@@ -144,7 +144,7 @@ function Home() {
         <div className="container--bannerFull">
           <img src={img10} className="bannerteste" />
         </div>
-        <h1>Categorias</h1>
+        <h1 className="container--tituloo">Categorias</h1>
         <div className="container--categorias">
           <img src={img11}></img>
           <img src={img12}></img>

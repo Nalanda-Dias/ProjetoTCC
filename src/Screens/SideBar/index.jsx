@@ -1,4 +1,7 @@
-import { BsCart, BsHeartFill } from "react-icons/bs";
+import { BsCart, BsHeartFill, 
+  BsHouseDoor, BsController,
+  BsReverseLayoutTextWindowReverse,BsMouse2, 
+  BsDisplay } from "react-icons/bs";
 // export default Menu
 
 import React from "react";
@@ -15,10 +18,19 @@ const Sidebar = ({ active }) => {
   return (
     <Container className="sidebar" sidebar={active}>
       <FaTimes onClick={closeSidebar} />
-      <Content>
+      <Content className="content">
+      <div className="tentativa">
+        <a href="/home"><SidebarItem Icon={BsHouseDoor} Text="Home" /></a>
+        <SidebarItem Icon={BsController} Text="Games" />
+        <SidebarItem Icon={BsReverseLayoutTextWindowReverse} Text="Hardware" />
+        <SidebarItem Icon={BsMouse2} Text="Periféricos" />
+        <SidebarItem Icon={BsDisplay} Text="Pcs" />
+
+        </div>
         <SidebarItem Icon={FaUserAlt} Text="Minha conta" />
         <SidebarItem Icon={BsCart} Text="Meus pedidos" />
-        <SidebarItem Icon={BsHeartFill} Text="Favoritos" />
+        <SidebarItem Icon={BsHeartFill} Text="Favoritos"  />
+       
       </Content>
     </Container>
   );
