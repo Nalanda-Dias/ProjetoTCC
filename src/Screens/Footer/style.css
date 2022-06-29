@@ -52,7 +52,28 @@ footer p, h4{
 }
 
 @media (min-width: 412px) and (max-width: 768px) {
-    .ContainerFoo
+    footer{
+        padding: 20px 0;
+    }
+
+    .ContainerFoo{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .Atendimento{
+        text-align: center;
+    }
+
+    .redes{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+
+    /* .ContainerFoo
     {
         height: 700px;
     }
@@ -92,5 +113,5 @@ footer p, h4{
     {
         width: 105px;
         height: 70px;
-    }
+    } */
 }
