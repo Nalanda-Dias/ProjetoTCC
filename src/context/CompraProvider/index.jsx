@@ -8,24 +8,23 @@ export const CompraProvider = ({ children }) => {
   const [compra, setCompra] = useState({});
   const [total, setTotal] = useState(0);
 
-  // const storage =  {
-  //   compra: compra,
-  //   total: total
-  // }
+  useEffect(() => {
+    setTotal(JSON.parse(window.localStorage.getItem("total")));
+    setCompra(JSON.parse(window.localStorage.getItem("compra")));
+  }, []);
 
-  // const persistConfig = {
-  //   key: 'root',
-  //   storage
-  // }
+  console.log("antes", compra);
 
-  // const presistedReducer = persistReducer(persistConfig);
-  // const store = persistStore(presistedReducer);
-  // console.log("Store", store);
+  useEffect(() => {
+    if (compra != null && compra != {} && total != 0 && total != null) {
+      console.log("compra", compra)
+      window.localStorage.setItem("total", total);
+      window.localStorage.setItem("compra", JSON.stringify(compra));
+    }
+  }, [compra, total]);
 
   return (
-    <CompraContext.Provider
-      value={{ compra, setCompra, total, setTotal }}
-    >
+    <CompraContext.Provider value={{ compra, setCompra, total, setTotal }}>
       {children}
     </CompraContext.Provider>
   );

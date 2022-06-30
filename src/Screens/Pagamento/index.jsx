@@ -8,6 +8,8 @@ import {
 } from "react-icons/bs";
 import { useCompra } from "../../context/CompraProvider/useCompra";
 import { useState } from "react";
+import { Api } from "../../services/api"
+import { useNavigate } from "react-router";
 
 const tiposPagamento = [
   {
@@ -36,6 +38,8 @@ const Pagamento = () => {
     id: 1,
   });
   const [active, setActive] = useState(0);
+  const compra = useCompra();
+  const navigate = useNavigate();
 
   const toogle = (posicao) => {
     if (active === posicao) {
@@ -74,12 +78,12 @@ const Pagamento = () => {
     }
   };
 
-  const compra = useCompra();
-  const [total, setTotal] = useState(compra)
-
-  useEffect(() => {
-    console.log(compra);
-  }, []);
+  const fecharCarrinho = async () => {
+    compra.compra.formaPagamentoId = tipoPagamento.id;
+    console.log(compra)
+    const request = await Api.post("carrinho/fecharCarrinho", { ...compra.compra });
+    if(request.status == 200) navigate("/confcompra");
+  }
 
   return (
     <>
@@ -131,11 +135,10 @@ const Pagamento = () => {
               <a href="/carrinho">
                 <button className="botaoVoltar">VOLTAR</button>
               </a>
-              <a href="/confcompra">
-                <button className="botaoComprar">
-                  PAGAR COM {tipoPagamento.titulo.toUpperCase()}
-                </button>
-              </a>
+
+              <button className="botaoComprar" onClick={() => fecharCarrinho()}>
+                PAGAR COM {tipoPagamento.titulo.toUpperCase()}
+              </button>
             </div>
           </div>
         </div>
