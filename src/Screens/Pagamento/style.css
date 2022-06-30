@@ -1,273 +1,102 @@
-.button06 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: 176px;
-    margin-top: 28px;
-    border: 3px solid #DF9F00;
-    background-color: #DF9F00;
-    text-align: left;
-   
+.containerPagamento {
+  width: 941px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  margin-top: 125px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.button07 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: 176px;
-    margin-top: 28px;
-    border: 3px solid #DF9F00;
-    background-color: transparent;
-    color: #DF9F00;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    float: left;
+.containerPagamento button{
+  transition: ease-in-out .1s;
 }
 
-.button07:hover
-{
-    color: black;
-    background-color: #DF9F00;
+.botaoPagamento {
+  border-radius: 4px;
+  width: 100%;
+  padding: 7px 13px 7px 13px;
+  border: 3px solid #df9f00;
+  background-color: transparent;
+  text-align: left;
+  color: #df9f00;
+  font-size: 20px; 
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-
-.button08 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: -285px;
-    margin-top: 80px;
-    border: 3px solid #DF9F00;
-    background-color: transparent;
-    color: #DF9F00;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    
+.botaoPagamento:hover {
+  color: black;
+  background-color: #df9f00;
 }
 
-.button08:hover
-{
-    color: black;
-    background-color: #DF9F00;
+.descricaoPagamento {
+  width: 59%;
+  text-align: left;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  height: auto;
 }
 
-.Pix
-{
-    margin-top: -185px;
-    margin-left: 280px;
+.DivButtons {
+  display: flex;
+  flex-direction: column;
+  width: 39%;
 }
 
-.PixText
-{
-    margin-left: 280px;
-    text-align: left;
-    width: 580px;
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justify;
+.totalPag {
+  width: 358px;
+  height: 98px;
+  padding: 20px, 100px, 20px, 100px;
+  background-color: #e5fff1;
+  font-size: inter;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f9050;
+  text-align: center;
+  padding: 20px;
 }
 
-.DivButtons
-{
-    margin-top: 80px;
+.botaoVoltar {
+  width: 154px;
+  height: 60px;
+  border-radius: 4px;
+  color: #df9f00;
+  border: 2px solid #df9f00;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.Total02
-{
-    width: 358px;
-    height: 98px;
-    padding: 20px, 100px, 20px, 100px;
-    background-color: #E5FFF1;
-    font-size: inter;
-    font-size: 20px;
-    font-weight: bold;
-    color: #1F9050;
-    margin-left: 780px;
-    margin-top: 100px;
+.botaoComprar {
+  width: auto;
+  height: 60px;
+  border-radius: 4px;
+  color: black;
+  border: 2px solid #df9f00;
+  background-color: #df9f00;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 12px;
 }
 
-.Total03
-{
-    text-align: center;
-    padding: 20px;
+.botaoVoltar:hover {
+  color: black;
+  background-color: #df9f00;
 }
 
-.button09
-{
-    width: 154px;
-    height: 44px;
-    border-radius: 4px;
-    color: #DF9F00;
-    border: 2px solid #DF9F00;
-    background-color: transparent;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 780px;
-    margin-top: 20px;
-    
+.botaoComprar:hover {
+  color: #df9f00;
+  background-color: transparent;
 }
 
-.button10
-{
-    width: 194px;
-    height: 44px;
-    border-radius: 4px;
-    color: black;
-    border: 2px solid #DF9F00;
-    background-color: #DF9F00;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 12px;
-   
-}
-
-.button09:hover
-{
-    color: black;
-    background-color: #DF9F00;
-}
-
-
-.button10:hover
-{
-    color: #DF9F00;
-    background-color: transparent;
-    border: 3px solid #DF9F00;
-}
-
-
-
-.button12 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: 176px;
-    margin-top: 28px;
-    border: 3px solid #DF9F00;
-    background-color: transparent;
-    text-align: left;
-    color: #DF9F00;
-}
-
-.button13 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: 176px;
-    margin-top: 28px;
-    border: 3px solid #DF9F00;
-    background-color: #DF9F00;
-    color: black;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    float: left;
-}
-
-.button12:hover
-{
-    color: black;
-    background-color: #DF9F00;
-}
-
-.button14
-{
-    width: 194px;
-    height: 44px;
-    border-radius: 4px;
-    color: black;
-    border: 2px solid #DF9F00;
-    background-color: #DF9F00;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 700;
-    margin-left: 12px;
-   
-}
-
-
-.button15 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: 176px;
-    margin-top: 28px;
-    border: 3px solid #DF9F00;
-    background-color: transparent;
-    text-align: left;
-    color: #DF9F00;
-}
-
-.button16 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: 176px;
-    margin-top: 28px;
-    border: 3px solid #DF9F00;
-    background-color: transparent;
-    color: #DF9F00;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    float: left;
-}
-
-.button16:hover
-{
-    color: black;
-    background-color: #DF9F00;
-}
-.button15:hover
-{
-    color: black;
-    background-color: #DF9F00;
-}
-
-.button17 {
-    border-radius: 4px;
-    width: 287px;
-    height: 44px;
-    padding: 7px1 13px, 7px, 13px;
-    margin-left: -285px;
-    margin-top: 80px;
-    border: 3px solid #DF9F00;
-    background-color: #DF9F00;
-    color: black;
-    font-family: roboto;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: left;
-    
-}
-
-.button18
-{
-    width: 194px;
-    height: 44px;
-    border-radius: 4px;
-    color: black;
-    border: 2px solid #DF9F00;
-    background-color: #DF9F00;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 700;
-    margin-left: 12px;
-   
+.controlePagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
 }

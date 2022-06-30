@@ -11,12 +11,15 @@ import {
   BsTrashFill,
 } from "react-icons/bs";
 import { useAuth } from "../../context/AuthProvider/useAuth";
+import { useCompra } from "../../context/CompraProvider/useCompra";
 import { useNavigate } from "react-router";
 import { Api } from "../../services/api";
 
 const Carrinho = () => {
   const [produtos, setProdutos] = useState([]);
   const [valorFinal, setValorFinal] = useState(0);
+  const compra = useCompra();
+  const navigate = useNavigate();
 
   const calculaTotal = (prod) => {
     let valorTotal = 0;
@@ -49,9 +52,24 @@ const Carrinho = () => {
     });
   }
 
-  async function removerProduto(id){
+  async function removerProduto(id) {
     const request = await Api.post(`carrinho/removeProduto/${id}`);
-    console.log(request)
+    console.log(request);
+  }
+
+  function finalizarCompra() {
+    const objCompra = {
+      userId: 0,
+      carrinhoID: produtos[0].carrinhoID,
+      enderecoId: 1,
+      formaPagamentoId: 0,
+      cartaoId: 0,
+      cupomId: "",
+    };
+    compra.setCompra(objCompra);
+    compra.setTotal(valorFinal)
+    console.log(compra)
+    navigate("/pagamento");
   }
 
   // console.log("produtos", produtos[0]);
@@ -108,7 +126,10 @@ const Carrinho = () => {
                         <BsChevronRight />
                       </span>
                     </div>
-                    <span className="removeItem" onClick={() => removerProduto(x.produtoID)}>
+                    <span
+                      className="removeItem"
+                      onClick={() => removerProduto(x.produtoID)}
+                    >
                       <BsTrashFill /> Remover
                     </span>
                   </div>
@@ -131,7 +152,7 @@ const Carrinho = () => {
             R${valorFinal}
           </p>
           <div>
-            <a href="/pagamento">
+            <a onClick={() => finalizarCompra()}>
               <button className="button04">CONFIRMAR</button>
             </a>
             <a href="/games">

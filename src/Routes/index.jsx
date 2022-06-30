@@ -9,10 +9,9 @@ import Pcs from "../Screens/Pcs";
 import Perifericos from "../Screens/Perifericos";
 import Pagamento from "../Screens/Pagamento/index";
 import Confirmacao from "../Screens/Confirmacao/index";
-import Boleto from "../Screens/Pagamento/boleto";
-import Cartao from "../Screens/Pagamento/Cartao";
 import Agendamento from "../Screens/Agendamento/index";
 import { ProtectedLayout } from "../components/ProtectedLayout";
+import { CompraProvider } from "../context/CompraProvider";
 export const AppRoutes = () => {
   return (
     <Router>
@@ -28,16 +27,44 @@ export const AppRoutes = () => {
           exact
           element={
             <ProtectedLayout>
-              <Carrinho />
+              <CompraProvider>
+                <Carrinho />
+              </CompraProvider>
             </ProtectedLayout>
           }
         />
         <Route path="/detalhes/:id" exact element={<Detalhe />} />
-        <Route path="/pagamento" exact element={<Pagamento />} />
-        <Route path="/boleto" exact element={<Boleto />} />
-        <Route path="/cartao" exact element={<Cartao />} />
-        <Route path="/confcompra" exact element={<Confirmacao />} />
-        <Route path="/agendamento" exact element={<Agendamento />} />
+        <Route
+          path="/pagamento"
+          exact
+          element={
+            <ProtectedLayout>
+              <CompraProvider>
+                <Pagamento />
+              </CompraProvider>
+            </ProtectedLayout>
+          }
+        />
+        <Route
+          path="/confcompra"
+          exact
+          element={
+            <ProtectedLayout>
+              <CompraProvider>
+                <Confirmacao />
+              </CompraProvider>
+            </ProtectedLayout>
+          }
+        />
+        <Route
+          path="/agendamento"
+          exact
+          element={
+            <ProtectedLayout>
+              <Agendamento />
+            </ProtectedLayout>
+          }
+        />
       </Routes>
     </Router>
   );
