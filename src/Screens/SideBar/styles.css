@@ -3,6 +3,10 @@
     display: none;
 }
 
+.linkk{
+    text-decoration: none;
+}
+
 @media (min-width: 412px) and (max-width: 768px) {
     .tentativa
 {

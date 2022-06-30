@@ -134,25 +134,6 @@ function Home() {
               </Produto>
             );
           })}
-          <Produto>
-            <ProdutoImagem src={img13} />
-            <ProdutoTexto>Darkiro Souls</ProdutoTexto>
-            <ProdutoTexto>R$ 200</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
-
-          <Produto>
-            <ProdutoImagem src={img13} />
-            <ProdutoTexto>Darkiro Souls</ProdutoTexto>
-            <ProdutoTexto>R$ 200</ProdutoTexto>
-            <ProdutoBotao>
-              <BsCart />
-              COMPRAR
-            </ProdutoBotao>
-          </Produto>
           </div>
         </div>
         <div className="container--banner">

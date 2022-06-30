@@ -10,7 +10,7 @@ const confcompra = () => {
         <div className="containerConf">
             <img src={img1} className="Check" />
             <p className='legendaCompra'>COMPRA FINALIZADA! <br/> ENVIAMOS MAIS ONFORMAÇÕES NO EMAIL CADASTRADO</p>
-            <button className='button11'>CONTINUAR</button>
+            <a href='/home'><button className='button11'>CONTINUAR</button></a>
         </div>
         </>
     )
