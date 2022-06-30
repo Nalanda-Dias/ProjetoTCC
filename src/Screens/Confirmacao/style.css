@@ -1,40 +1,43 @@
 .Check {
-    width: 194px;
-    height: 194px;
-    margin-top: 114.5px;
-    margin-left: 571px;
+  width: 194px;
+  height: 194px;
 }
 
 .legendaCompra {
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-weight: 400;
-    margin-left: 0px;
-    text-align: center;
-    margin-top: 41px;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 0px;
+  text-align: center;
 }
 
 .button11 {
-
-    width: 194px;
-    height: 44px;
-    border-radius: 4px;
-    color: black;
-    border: 2px solid #DF9F00;
-    background-color: #DF9F00;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 570px;
-    margin-top: 25px;
+  width: 194px;
+  height: 44px;
+  border-radius: 4px;
+  color: black;
+  border: 2px solid #df9f00;
+  background-color: #df9f00;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.button11:hover
-{
-    color: #DF9F00;
-    background-color: transparent;
-    border: 3px solid #DF9F00;
+.button11:hover {
+  color: #df9f00;
+  background-color: transparent;
+  border: 3px solid #df9f00;
 }
 
-
-
+.containerConf {
+  width: 941px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 125px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}

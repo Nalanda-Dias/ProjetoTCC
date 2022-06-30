@@ -34,7 +34,7 @@ const Detalhe = () => {
       userId: 0,
       quantidade: 1,
       valorUnidade: parseInt(Produto.preco)
-    }).catch(notifyError("Erro ao adicionar produto"));
+    })
     console.log("Log - Req Add Prod Carrinho", request)
     navigate("/carrinho");
   }
