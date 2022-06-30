@@ -2,7 +2,7 @@ import {
   BsCart, BsHeartFill,
   BsHouseDoor, BsController,
   BsReverseLayoutTextWindowReverse, BsMouse2,
-  BsDisplay
+  BsDisplay, BsClock
 } from "react-icons/bs";
 // export default Menu
 
@@ -25,6 +25,7 @@ const Sidebar = ({ active }) => {
         <div className="tentativa">
   
           <a href="/home" className="linkk"><SidebarItem Icon={BsHouseDoor} Text="Home" /></a>
+          <a href="/agendamento" className="linkk"><SidebarItem Icon={BsClock} Text="Agendamento" /></a>
           <a href="/games" className="linkk"><SidebarItem Icon={BsController} Text="Games" /></a>
           <a href="/hardware" className="linkk"><SidebarItem Icon={BsReverseLayoutTextWindowReverse} Text="Hardware" /></a>
           <a href="/perifericos" className="linkk"><SidebarItem Icon={BsMouse2} Text="Periféricos" /></a>

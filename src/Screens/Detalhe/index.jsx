@@ -24,14 +24,17 @@ const Detalhe = () => {
     });
 
   async function adicionarCarrinho() {
-    const abrirCarrinho = await Api.post("carrinho");
+    const pesquisaCarrinho = await Api.get("carrinho");
+    if(pesquisaCarrinho.data.data == null){
+      const abrirCarrinho = await Api.post("carrinho");
+      console.log("Log - Req Abrindo Carrinho", abrirCarrinho)
+    }
     const request = await Api.post("carrinho/addProduto", {
       produtoId: id,
       userId: 0,
-      quntidade: 1,
+      quantidade: 1,
       valorUnidade: parseInt(Produto.preco)
     }).catch(notifyError("Erro ao adicionar produto"));
-    console.log("Log - Req Abrindo Carrinho", abrirCarrinho)
     console.log("Log - Req Add Prod Carrinho", request)
     navigate("/carrinho");
   }

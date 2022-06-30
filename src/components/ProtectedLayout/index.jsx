@@ -1,16 +1,19 @@
 // eslint-disable-next-line
-import react from "react"; 
+import react, { useEffect } from "react";
 import { useAuth } from "../../context/AuthProvider/useAuth";
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 export const ProtectedLayout = ({ children }) => {
   const auth = useAuth();
-  const history = useHistory();
+  const location = useLocation();
 
-  if (!auth.token) {
-    return history.push('/login')
-  }
+  useEffect(() => {
+    console.log(auth.token != null)
+    if (auth.token == null) {
+      <Navigate to="/" state={{ from: location }} replace></Navigate>;
+    }
+  }, [auth.token]);
 
   return children;
 };

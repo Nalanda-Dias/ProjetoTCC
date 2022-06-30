@@ -11,8 +11,6 @@ Api.interceptors.request.use(
     (config) => {
         const user = getUserLocalStorage();
         config.headers.Authorization = `Bearer ${user?.token}`;
-        console.log("Service - Api", `Bearer ${user?.token}`)
-
         return config
     },
     (error) => {
