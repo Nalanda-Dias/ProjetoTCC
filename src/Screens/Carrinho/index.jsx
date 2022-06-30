@@ -37,42 +37,44 @@ const Carrinho = () => {
             <h2 className="tituloss">PRODUTOS</h2>
           </div>
           <div className="DivProd--conteudo">
-              <div className="descricaoJogo">
-                <img className="imgProd" src={img1}></img>
-                <p className="Legenda01">GTA V</p>
-              </div>
-              <div className="quantidadeCar">
-                <span className="">Quant:</span>
-                <div className="quantidadeCar--controles">
-                    <span className="controleSoma">
-                      <BsChevronLeft />
-                    </span>
-                    <span>0</span>
-                    <span className="controleMenos">
-                      <BsChevronRight />
-                    </span>
-                </div>
-                <span className="removeItem">
-                  <BsTrashFill /> Remover
+            <div className="descricaoJogo">
+              <img className="imgProd" src={img1}></img>
+              <p className="Legenda01">GTA V</p>
+            </div>
+            <div className="quantidadeCar">
+              <span className="">Quant:</span>
+              <div className="quantidadeCar--controles">
+                <span className="controleSoma">
+                  <BsChevronLeft />
+                </span>
+                <span>0</span>
+                <span className="controleMenos">
+                  <BsChevronRight />
                 </span>
               </div>
-              <div className="preco">
-                <p>
-                  Preço:
-                  <br />
-                  R$2,00
-                </p>
-              </div>
+              <span className="removeItem">
+                <BsTrashFill /> Remover
+              </span>
+            </div>
+            <div className="preco">
+              <p>
+                Preço:
+                <br />
+                R$2,00
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="DivFinal">
-          <p className="total">Total:<br/>R$3000,00</p>
+          <p className="total">Total:<br />R$3000,00</p>
           <div>
-              <a href="/pagamento">
-                <button className="button04">CONFIRMAR</button>
-              </a>
+            <a href="/pagamento">
+              <button className="button04">CONFIRMAR</button>
+            </a>
+            <a href="/games">
               <button className="button05">CONTINUAR COMPRANDO</button>
+            </a>
           </div>
         </div>
       </div>

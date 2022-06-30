@@ -24,7 +24,7 @@ const pagamento = () => {
             <p className='Total03'>TOTAL A PAGAR: <br/> R$ 3000,00</p>
         </div>
         <div>
-            <button className='button09'>VOLTAR</button>
+        <a href="/carrinho"><button className='button09'>VOLTAR</button></a>
             <a href='/confcompra'><button className='button10'>PAGAR COM PIX</button></a>
         </div>
         </>

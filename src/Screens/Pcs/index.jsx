@@ -12,17 +12,19 @@ import {
   Produto,
 } from "../Home/styles";
 import img1 from "../../assents/minecraft.jpg"
+import { useProduto } from "../../context/ProdutoProvider/useProduto";
 
 const Pcs = () => {
-  const [produtos, setProduto] = useState([]);
+  //const [produtos, setProduto] = useState([]);
   const navigate = useNavigate();
+  const produto = useProduto();
 
   useEffect(() => {
     async function getx() {
       try {
         const res = await Api.get(`/Produto`);
         console.log(res.data.data);
-        setProduto(res.data.data);
+        produto.setProdutos(res.data.data);
       } catch (error) {
         console.log(error);
       }
@@ -34,7 +36,7 @@ const Pcs = () => {
     <>
       <div className="containerFull">
         <div className="containerPcs">
-          {produtos.map((x) => {
+          {produto.produtos.map((x) => {
             return (
               <Produto key={x.produtoID}>
                 <ProdutoImagem src={x.urlCapa} />
