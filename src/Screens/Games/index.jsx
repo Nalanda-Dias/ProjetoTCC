@@ -1,28 +1,28 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import { Card } from "react-bootstrap";
 import { BsCart } from "react-icons/bs";
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { Api } from "../../services/api";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   ProdutoBotao,
   ProdutoImagem,
   ProdutoTexto,
   Produto,
 } from "../Home/styles";
-import img1 from "../../assents/minecraft.jpg"
+import { useProduto } from "../../context/ProdutoProvider/useProduto";
 
 const Games = () => {
-  const [produtos, setProduto] = useState([]);
+  //const [produtos, setProduto] = useState([]);
   const navigate = useNavigate();
+  const produto = useProduto();
 
   useEffect(() => {
     async function getx() {
       try {
         const res = await Api.get(`/Produto`);
         console.log(res.data.data);
-        setProduto(res.data.data);
+        produto.setProdutos(res.data.data);
       } catch (error) {
         console.log(error);
       }
@@ -34,7 +34,7 @@ const Games = () => {
     <>
       <div className="containerFull">
         <div className="containerGames">
-          {produtos.map((x) => {
+          {produto.produtos.map((x) => {
             return (
               <Produto key={x.produtoID}>
                 <ProdutoImagem src={x.urlCapa} />
