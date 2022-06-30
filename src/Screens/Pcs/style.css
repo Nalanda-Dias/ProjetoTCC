@@ -1,0 +1,31 @@
+.containerPcs {
+    width: 941px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: start; 
+    flex-wrap: wrap;
+  }
+  
+  .containerPcs div{
+      margin: 0.5%;
+  }
+  
+  .containerPcs div:nth-child(4n){
+    margin-right: 0px;
+  }
+  
+  
+  
+  .containerPcs div:nth-child(4n+1) {
+    margin-left: 0px;
+  }
+  
+  @media (min-width: 412px) and (max-width: 768px) {
+    .containerPcs {
+      width: 441px;
+      margin-left: 100px;
+      margin-top: -20px;
+    }
+  }

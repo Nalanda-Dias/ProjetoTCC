@@ -20,10 +20,12 @@ import { Produto, ProdutoBotao, ProdutoImagem, ProdutoTexto } from "./styles";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Api } from "../../services/api";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 function Home() {
   const [top5, setTop5] = useState([]);
-
+  const navigate = useNavigate();
+  
   useEffect(() => {
     async function buscaTop5() {
       const dados = await Api.get("produto/top4");
@@ -125,7 +127,7 @@ function Home() {
                 <ProdutoImagem src={x.urlCapa} />
                 <ProdutoTexto>{x.nome}</ProdutoTexto>
                 <ProdutoTexto>R$ {x.preco}</ProdutoTexto>
-                <ProdutoBotao>
+                <ProdutoBotao onClick={() => navigate(`/detalhes/${x.produtoID}`)}>
                   <BsCart />
                   COMPRAR
                 </ProdutoBotao>

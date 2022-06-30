@@ -19,7 +19,7 @@ const Carrinho = () => {
         <div className="DivEnd">
           <div className="tituloCar">
             <BsFillGeoAltFill className="icone" />
-            <h2> SELECIONE O ENDEREÇO</h2>
+            <h2 className="tituloss"> SELECIONE O ENDEREÇO</h2>
           </div>
 
           <div className="conteudo">
@@ -34,7 +34,7 @@ const Carrinho = () => {
         <div className="DivProd">
           <div className="tituloCar">
             <BsFillBasket2Fill className="icone" height={40} />
-            <h2>PRODUTOS</h2>
+            <h2 className="tituloss">PRODUTOS</h2>
           </div>
           <div className="DivProd--conteudo">
               <div className="descricaoJogo">
