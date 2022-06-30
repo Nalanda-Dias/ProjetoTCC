@@ -9,7 +9,7 @@ const Agendamento = () => {
     return (
 
         <>
-            <div>
+            <div className='agendament'>
                 <img className='imagendamento' src={img1}></img>
                 <p className='legendaAgenda'>Agende seu teste e experiemente <br /> antes de comprar!</p>
                 <button className='agenda'>AGENDAR</button>

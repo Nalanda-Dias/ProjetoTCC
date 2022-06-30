@@ -1,34 +1,58 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import { Card } from 'react-bootstrap';
+import { Card } from "react-bootstrap";
 import { BsCart } from "react-icons/bs";
-import img1 from "../../assents/thumb-heavy-black.png";
+import React, { useEffect, useState } from "react";
+import { Api } from "../../services/api";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import {
+  ProdutoBotao,
+  ProdutoImagem,
+  ProdutoTexto,
+  Produto,
+} from "../Home/styles";
+import img1 from "../../assents/minecraft.jpg"
+import { useProduto } from "../../context/ProdutoProvider/useProduto";
 
 const Pcs = () => {
-    return (
+  //const [produtos, setProduto] = useState([]);
+  const navigate = useNavigate();
+  const produto = useProduto();
 
-        <>
-        <div>
-         
-         <Card>
-             <div className=''>
-                 <img className='card-img-top' src={img1}></img>
-                 <div className='card-body'>
-                     <h5 className='card-text'>Pc Gamer</h5>
-                     <p className='card-text'>R$ 3.000</p>
-                     <div>
-                         <button className='btnComprar'><BsCart />COMPRAR</button>
-                     </div>
-                 </div>
-             </div>
+  useEffect(() => {
+    async function getx() {
+      try {
+        const res = await Api.get(`/Produto`);
+        console.log(res.data.data);
+        produto.setProdutos(res.data.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    getx();
+  }, []);
 
-         </Card>
-         </div>
-     <br /><br /><br /><br />
-     <br /><br /><br /><br />
-     <br /><br /><br /><br />
-        </>
-    )
-}
-export default Pcs
+  return (
+    <>
+      <div className="containerFull">
+        <div className="containerPcs">
+          {produto.produtos.map((x) => {
+            return (
+              <Produto key={x.produtoID}>
+                <ProdutoImagem src={x.urlCapa} />
+                <ProdutoTexto>{x.nome}</ProdutoTexto>
+                <ProdutoTexto>R$ {x.preco}</ProdutoTexto>
+                <ProdutoBotao onClick={() => navigate(`/detalhes/${x.produtoID}`)}>
+                  <BsCart />
+                  COMPRAR
+                </ProdutoBotao>
+              </Produto>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Pcs;

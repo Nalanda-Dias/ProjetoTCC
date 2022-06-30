@@ -18,15 +18,36 @@ import {
 } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
 import Menu from "../SideBar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import SideBar from "../SideBar";
 import { useAuth } from "../../context/AuthProvider/useAuth";
+import { useProduto } from "../../context/ProdutoProvider/useProduto";
+import { Api } from "../../services/api";
 
 export const Header = () => {
   const [sideBar, setSidebar] = useState(false);
   const showSiderbar = () => setSidebar(!sideBar);
   const user = useAuth();
+  const produto = useProduto();
+  //const [produtos, setProdutos] = useState([]);
+  const [pesquisa, setPesquisa] = useState("");
+ 
+  
+
+ 
+  async function PesquisaProduto(e, nome){
+    e.preventDefault();
+
+    const dados = await Api.get(`/Produto?nome=${nome}`);
+    console.log("Api", dados);
+    produto.setProdutos(dados.data.data);
+    console.log("Produto", produto)
+    console.log("Produto", produto.produtos)
+  }
+    
+
+  
 
   return (
     <>
@@ -40,15 +61,18 @@ export const Header = () => {
           <form className="form-inline">
             <div className="input-group search-box">
               <span className="input-group-btn">
-                <button className="btn btn-secondary" type="button">
+                <button className="btn btn-secondary"  onClick={(e) => PesquisaProduto(e, pesquisa)}>
                   <img src={Vector} alt="Infinite" className="upa" />
+          
                 </button>
               </span>
               <input
+              
                 type="text"
                 className="busque"
                 placeholder="Busque aqui "
                 aria-label="Search for..."
+                onChange={e => setPesquisa(e.target.value)}
               />
             </div>
           </form>

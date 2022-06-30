@@ -1,11 +1,31 @@
+.containerPerifericos {
+  width: 941px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start; 
+  flex-wrap: wrap;
+}
+
+.containerPerifericos div{
+    margin: 0.5%;
+}
+
+.containerPerifericos div:nth-child(4n){
+  margin-right: 0px;
+}
+
+
+
+.containerPerifericos div:nth-child(4n+1) {
+  margin-left: 0px;
+}
 
 @media (min-width: 412px) and (max-width: 768px) {
-    .card {
-      margin-left: -95px;
-      margin-top: 60px;
-      float: none;
-    }
-
-
-    
+  .containerPerifericos {
+    width: 441px;
+    margin-left: 100px;
+    margin-top: -20px;
+  }
 }

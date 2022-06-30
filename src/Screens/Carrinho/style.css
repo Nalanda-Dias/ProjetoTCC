@@ -234,11 +234,16 @@
     .DivEnd {
         width: 336px;
         height: 220.41px;
-        margin-left: 38px;
+        margin-left: -438px;
     }
 
     .divend {
         font-size: 15px;
+    }
+
+    .tituloss
+    {
+      font-size: 22px;
     }
 
     .titulo01 {
@@ -247,8 +252,8 @@
 
     .DivProd {
         width: 336px;
-        height: 575px;
-        margin-left: 38px;
+        height: 375px;
+        margin-left: -438px;
 
     }
 
@@ -259,15 +264,19 @@
     }
 
     .Legenda01 {
-        font-size: 15px;
-        margin-left: 127px;
-        margin-top: -30px;
+        font-size: 10px;
+        margin-left: 10px;
+        margin-top: 05px;
     }
 
-    .Quant {
-        font-size: 16px;
-        margin-top: -10px;
-        margin-left: 130px;
+    .descricaoJogo > p{
+      font-size: 25px;
+      width: 80px;
+    }
+    .quantidadeCar {
+        font-size: 10px;
+        margin-top: 133px;
+        margin-left: -190px;
         width: 50px;
     }
 
@@ -289,28 +298,28 @@
 
     .preco {
         font-size: 15px;
-        margin-top: -103px;
-        margin-left: 235px;
-        width: 20px;
+        margin-top: 147px;
+        margin-left: 85px;
+        width: 200px;
     }
 
     .DivFinal {
         width: 336px;
         height: 126px;
-        margin-left: 38px;
+        margin-left: -438px;
     }
 
     .total {
         font-size: 20px;  
         padding: 15px;
-        margin-top: 20px;
+        margin-top: -5px;
     }
 
 
     .button04 {
         width: 97.5px;
         height: 26px;
-        margin-top: 25px;
+        margin-top: 5px;
         margin-left: 20px;
         border-radius: 5px;
         font-size: 10px;

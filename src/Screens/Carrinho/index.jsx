@@ -62,7 +62,7 @@ const Carrinho = () => {
         <div className="DivEnd">
           <div className="tituloCar">
             <BsFillGeoAltFill className="icone" />
-            <h2> SELECIONE O ENDEREÇO</h2>
+            <h2 className="tituloss"> SELECIONE O ENDEREÇO</h2>
           </div>
 
           <div className="conteudo">
@@ -76,7 +76,7 @@ const Carrinho = () => {
         <div className="DivProd">
           <div className="tituloCar">
             <BsFillBasket2Fill className="icone" height={40} />
-            <h2>PRODUTOS</h2>
+            <h2 className="tituloss">PRODUTOS</h2>
           </div>
           {produtos.length > 0 &&
             produtos.map((x) => {
@@ -134,7 +134,9 @@ const Carrinho = () => {
             <a href="/pagamento">
               <button className="button04">CONFIRMAR</button>
             </a>
-            <button className="button05">CONTINUAR COMPRANDO</button>
+            <a href="/games">
+              <button className="button05">CONTINUAR COMPRANDO</button>
+            </a>
           </div>
         </div>
       </div>
